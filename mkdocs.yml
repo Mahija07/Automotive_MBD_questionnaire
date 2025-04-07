@@ -2,10 +2,10 @@ site_name: AutoDev Vault
 
 nav:
   - Home: index.md
-  - Model-Based Development (MBD): mbd.md
-  - Code-Based Development (CBD): cbd.md
-  - Simulink: simulink.md
-  - Stateflow: stateflow.md
+  - Model-Based Development (MBD): MBD.md
+  - Code-Based Development (CBD): CBD.md
+  - Simulink: Simulink.md
+  - Stateflow: Stateflow.md
   - AUTOSAR & RTE: autsar.md
   - PolySpace & SonarQube: polyspace.md
   - Tools & Scripting: tools.md
