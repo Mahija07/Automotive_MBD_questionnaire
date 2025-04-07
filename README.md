@@ -72,8 +72,8 @@ While this is a personal vault, I welcome suggestions or improvements. If you'd 
 
 ## 📬 Contact
 
-📧 mahija@example.com  
-🔗 [LinkedIn](https://linkedin.com/in/your-profile)
+📧 mahijaverma61@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/mahija-verma/)
 
 ---
 
