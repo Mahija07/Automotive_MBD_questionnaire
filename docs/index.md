@@ -40,6 +40,60 @@
       transition: background-color 0.3s ease, color 0.3s ease;
     }
 
+    nav {
+      background: linear-gradient(to right, #0077ff, #00cfff);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .nav-left {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 0.5rem;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+      transform: scale(1.05);
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+      margin-top: 0.5rem;
+    }
+
+    .search-box input {
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+      border: none;
+      font-size: 0.9rem;
+      outline: none;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    }
+
     .container {
       max-width: 1200px;
       margin: 0 auto;
@@ -61,14 +115,8 @@
     }
 
     @keyframes pulse {
-      from {
-        transform: scale(1);
-        opacity: 0.8;
-      }
-      to {
-        transform: scale(1.05);
-        opacity: 1;
-      }
+      from { transform: scale(1); opacity: 0.8; }
+      to { transform: scale(1.05); opacity: 1; }
     }
 
     header p {
@@ -137,6 +185,25 @@
   </style>
 </head>
 <body>
+  <nav>
+    <div class="nav-left">AutoDev Vault</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="mbd.md">Model-Based Development (MBD)</a>
+      <a href="cbd.md">Code-Based Development (CBD)</a>
+      <a href="simulink.md">Simulink</a>
+      <a href="stateflow.md">Stateflow</a>
+      <a href="autsar.md">AUTOSAR & RTE</a>
+      <a href="polyspace.md">PolySpace & SonarQube</a>
+      <a href="tools.md">Tools & Scripting</a>
+      <a href="testing.md">Testing & Safety</a>
+      <a href="system.md">System Design & Integration</a>
+    </div>
+    <div class="search-box">
+      <input type="text" placeholder="🔍 Search topics..." />
+    </div>
+  </nav>
+
   <div class="container">
     <header>
       <div class="logo">🚗 AutoDev Vault</div>
@@ -157,7 +224,7 @@
     </section>
 
     <footer>
-      Made with ❤️ by Mahija · Powered by MkDocs & GitHub Pages
+      Made with ❤️ by Mahija
     </footer>
   </div>
 
