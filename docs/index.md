@@ -72,8 +72,8 @@
     }
 
     header p {
-      font-size: 1.2rem;
-      max-width: 700px;
+      font-size: 1.1rem;
+      max-width: 800px;
       margin: 1rem auto 0;
     }
 
@@ -98,7 +98,7 @@
 
     .topics {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 1.5rem;
       margin-top: 3rem;
     }
@@ -125,7 +125,7 @@
     }
 
     .card p {
-      font-size: 0.95rem;
+      font-size: 0.9rem;
     }
 
     footer {
@@ -140,31 +140,24 @@
   <div class="container">
     <header>
       <div class="logo">🚗 AutoDev Vault</div>
-      <p>Your go-to resource for mastering Model-Based & Code-Based Development in the automotive world. Explore topics, revise for interviews, and grow your expertise!</p>
+      <p>A rich questionnaire for the Automotive domain focused on practical technical topics. This will help you in cracking interviews, strengthening fundamentals, and understanding real-world systems in MBD, Simulink, Stateflow, and more!</p>
       <button class="dark-toggle" onclick="toggleTheme()">🌗 Toggle Theme</button>
     </header>
 
     <section class="topics">
-      <a class="card" href="mbd.md">
-        <h3>⚙️ Model-Based Development</h3>
-        <p>Explore TLC, Simulink Integration, SIL/MIL, and code generation concepts.</p>
-      </a>
-      <a class="card" href="cbd.md">
-        <h3>💻 Code-Based Development</h3>
-        <p>From MISRA C to unit testing and embedded software workflows.</p>
-      </a>
-      <a class="card" href="simulink.md">
-        <h3>📊 Simulink</h3>
-        <p>Dive into modeling, subsystems, solvers, masking, and simulations.</p>
-      </a>
-      <a class="card" href="stateflow.md">
-        <h3>🔁 Stateflow</h3>
-        <p>Understand events, states, temporal logic, and control logic modeling.</p>
-      </a>
+      <a class="card" href="mbd.md"><h3>⚙️ Model-Based Development</h3><p>Simulink | Stateflow | TLC | SIL | MIL</p></a>
+      <a class="card" href="cbd.md"><h3>💻 Code-Based Development</h3><p>C | Embedded C | MISRA | Unit Testing</p></a>
+      <a class="card" href="simulink.md"><h3>📊 Simulink</h3><p>Subsystems | Masking | Solvers</p></a>
+      <a class="card" href="stateflow.md"><h3>🔁 Stateflow</h3><p>Events | States | Logic | Transitions</p></a>
+      <a class="card" href="autsar.md"><h3>🧩 AUTOSAR & RTE</h3><p>Modules | RTE | Com Stack</p></a>
+      <a class="card" href="polyspace.md"><h3>📋 PolySpace & SonarQube</h3><p>Static Analysis & Compliance</p></a>
+      <a class="card" href="tools.md"><h3>🛠 Tools & Scripting</h3><p>MATLAB | M-Scripting | Python | Git | VSCode</p></a>
+      <a class="card" href="testing.md"><h3>✅ Testing & Safety</h3><p>Google Test | ISO-26262 | JAMA | JIRA</p></a>
+      <a class="card" href="system.md"><h3>🔧 System Design & Integration</h3><p>Preevision | MagicDraw | Zonal Modules</p></a>
     </section>
 
     <footer>
-      Made with ❤️ by Mahija · 
+      Made with ❤️ by Mahija · Powered by MkDocs & GitHub Pages
     </footer>
   </div>
 
