@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Code-Based Development (CBD) - AutoDev Vault</title>
+        <title>Tools & Scripting - AutoDev Vault</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/fontawesome.min.css" rel="stylesheet">
         <link href="../css/brands.min.css" rel="stylesheet">
@@ -41,7 +41,7 @@
                                 <a href="../MBD/" class="nav-link">Model-Based Development (MBD)</a>
                             </li>
                             <li class="nav-item">
-                                <a href="./" class="nav-link active" aria-current="page">Code-Based Development (CBD)</a>
+                                <a href="../CBD/" class="nav-link">Code-Based Development (CBD)</a>
                             </li>
                             <li class="nav-item">
                                 <a href="../Simulink/" class="nav-link">Simulink</a>
@@ -56,7 +56,7 @@
                                 <a href="../polyspace/" class="nav-link">PolySpace & SonarQube</a>
                             </li>
                             <li class="nav-item">
-                                <a href="../tools/" class="nav-link">Tools & Scripting</a>
+                                <a href="./" class="nav-link active" aria-current="page">Tools & Scripting</a>
                             </li>
                             <li class="nav-item">
                                 <a href="../testing/" class="nav-link">Testing & Safety</a>
@@ -73,12 +73,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../MBD/" class="nav-link">
+                                <a rel="prev" href="../polyspace/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../Simulink/" class="nav-link">
+                                <a rel="next" href="../testing/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -100,12 +100,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="2"><a href="#title-code-based-development-cbd" class="nav-link">title: Code-Based Development (CBD)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-bs-level="1"><a href="#code-based-development-cbd" class="nav-link">💻 Code-Based Development (CBD)</a>
+            <li class="nav-item" data-bs-level="1"><a href="#tools-scripting-matlab-python-linux-git-jira" class="nav-link">🧰 Tools &amp; Scripting (MATLAB, Python, Linux, Git, JIRA)</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-bs-level="2"><a href="#sample-qa" class="nav-link">Sample Q&amp;A</a>
               <ul class="nav flex-column">
@@ -118,38 +113,30 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<hr />
-<h2 id="title-code-based-development-cbd">title: Code-Based Development (CBD)</h2>
-<h1 id="code-based-development-cbd">💻 Code-Based Development (CBD)</h1>
-<p>This section includes:</p>
-<ul>
-<li>Embedded C and C++ fundamentals</li>
-<li>MISRA C rules</li>
-<li>Manual code development for automotive applications</li>
-<li>Best practices for maintainable and scalable code</li>
-</ul>
+<h1 id="tools-scripting-matlab-python-linux-git-jira">🧰 Tools &amp; Scripting (MATLAB, Python, Linux, Git, JIRA)</h1>
+<p>Focused on scripting, version control, and productivity tools for engineers.</p>
 <hr />
 <h2 id="sample-qa">Sample Q&amp;A</h2>
-<p><strong>Q1. What are some key MISRA C rules to follow in automotive software?</strong></p>
-<p><strong>A:</strong> Avoid dynamic memory allocation, ensure explicit type casting, and prevent use of unrestricted pointers.</p>
-<p><strong>Q2. How can C++ be used in embedded systems?</strong></p>
-<p><strong>A:</strong> Through classes for encapsulation, templates for reusability, and namespaces for modular code.</p>
-<p><strong>Q3. What is volatile keyword in embedded C?</strong></p>
-<p><strong>A:</strong> It tells the compiler not to optimize a variable that can change unexpectedly (like hardware registers).</p>
-<p><strong>Q4. How do you manage memory in embedded C?</strong></p>
-<p><strong>A:</strong> Use static allocation, stack variables, and avoid heap where possible.</p>
-<p><strong>Q5. What are macros and how are they used in embedded systems?</strong></p>
-<p><strong>A:</strong> Macros are preprocessor definitions used for constants and conditional compilation.</p>
-<p><strong>Q6. What are the challenges of using pointers in embedded systems?</strong></p>
-<p><strong>A:</strong> Dangling pointers, null dereferencing, and memory corruption.</p>
-<p><strong>Q7. How do you organize code in a multi-module embedded project?</strong></p>
-<p><strong>A:</strong> Using header files, abstraction layers, and separation of concerns.</p>
-<p><strong>Q8. What is the use of bit manipulation in embedded code?</strong></p>
-<p><strong>A:</strong> Efficient control of hardware registers and flags.</p>
-<p><strong>Q9. How do you implement ISR (Interrupt Service Routines)?</strong></p>
-<p><strong>A:</strong> By registering hardware interrupt handlers and keeping them short and efficient.</p>
-<p><strong>Q10. What tools help maintain code quality in automotive development?</strong></p>
-<p><strong>A:</strong> MISRA checkers, SonarQube, Polyspace, static/dynamic analyzers.</p></div>
+<p><strong>Q1. What is MATLAB scripting used for in MBD?</strong><br />
+<strong>A:</strong> Automating simulations, model generation, post-processing, and data analysis.</p>
+<p><strong>Q2. How is Python used in automotive workflows?</strong><br />
+<strong>A:</strong> For data processing, automation, test scripting, and integration with toolchains.</p>
+<p><strong>Q3. What is Bash scripting used for in Linux-based systems?</strong><br />
+<strong>A:</strong> Automating command-line tasks, running builds, and system maintenance.</p>
+<p><strong>Q4. How does Git support collaborative development?</strong><br />
+<strong>A:</strong> Through branching, merging, version tracking, and remote repositories.</p>
+<p><strong>Q5. What is the difference between Git and GitHub?</strong><br />
+<strong>A:</strong> Git is the version control tool; GitHub is a web-based platform for hosting Git repositories.</p>
+<p><strong>Q6. What is the use of JIRA in software projects?</strong><br />
+<strong>A:</strong> Managing requirements, tasks, bugs, and sprint workflows using Agile boards.</p>
+<p><strong>Q7. What are Git submodules used for?</strong><br />
+<strong>A:</strong> Including one Git repository as a subdirectory of another.</p>
+<p><strong>Q8. How do you manage Python dependencies in a project?</strong><br />
+<strong>A:</strong> Using <code>requirements.txt</code> or <code>pipenv</code> for virtual environments.</p>
+<p><strong>Q9. What are <code>makefiles</code> used for in embedded projects?</strong><br />
+<strong>A:</strong> Defining build rules and automating compilation.</p>
+<p><strong>Q10. How do you use VSCode for embedded development?</strong><br />
+<strong>A:</strong> With extensions for C/C++, Git, Docker, debugging, and remote development.</p></div>
             </div>
         </div>
 

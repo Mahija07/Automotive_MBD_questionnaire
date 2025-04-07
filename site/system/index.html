@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Code-Based Development (CBD) - AutoDev Vault</title>
+        <title>System Design & Integration - AutoDev Vault</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/fontawesome.min.css" rel="stylesheet">
         <link href="../css/brands.min.css" rel="stylesheet">
@@ -41,7 +41,7 @@
                                 <a href="../MBD/" class="nav-link">Model-Based Development (MBD)</a>
                             </li>
                             <li class="nav-item">
-                                <a href="./" class="nav-link active" aria-current="page">Code-Based Development (CBD)</a>
+                                <a href="../CBD/" class="nav-link">Code-Based Development (CBD)</a>
                             </li>
                             <li class="nav-item">
                                 <a href="../Simulink/" class="nav-link">Simulink</a>
@@ -62,7 +62,7 @@
                                 <a href="../testing/" class="nav-link">Testing & Safety</a>
                             </li>
                             <li class="nav-item">
-                                <a href="../system/" class="nav-link">System Design & Integration</a>
+                                <a href="./" class="nav-link active" aria-current="page">System Design & Integration</a>
                             </li>
                         </ul>
 
@@ -73,12 +73,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../MBD/" class="nav-link">
+                                <a rel="prev" href="../testing/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../Simulink/" class="nav-link">
+                                <a rel="next" class="nav-link disabled">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -100,12 +100,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="2"><a href="#title-code-based-development-cbd" class="nav-link">title: Code-Based Development (CBD)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-bs-level="1"><a href="#code-based-development-cbd" class="nav-link">💻 Code-Based Development (CBD)</a>
+            <li class="nav-item" data-bs-level="1"><a href="#system-design-integration" class="nav-link">🧩 System Design &amp; Integration</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-bs-level="2"><a href="#sample-qa" class="nav-link">Sample Q&amp;A</a>
               <ul class="nav flex-column">
@@ -118,38 +113,30 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<hr />
-<h2 id="title-code-based-development-cbd">title: Code-Based Development (CBD)</h2>
-<h1 id="code-based-development-cbd">💻 Code-Based Development (CBD)</h1>
-<p>This section includes:</p>
-<ul>
-<li>Embedded C and C++ fundamentals</li>
-<li>MISRA C rules</li>
-<li>Manual code development for automotive applications</li>
-<li>Best practices for maintainable and scalable code</li>
-</ul>
+<h1 id="system-design-integration">🧩 System Design &amp; Integration</h1>
+<p>Explore system-level integration, architectural tools, and workflows used in large-scale automotive software development.</p>
 <hr />
 <h2 id="sample-qa">Sample Q&amp;A</h2>
-<p><strong>Q1. What are some key MISRA C rules to follow in automotive software?</strong></p>
-<p><strong>A:</strong> Avoid dynamic memory allocation, ensure explicit type casting, and prevent use of unrestricted pointers.</p>
-<p><strong>Q2. How can C++ be used in embedded systems?</strong></p>
-<p><strong>A:</strong> Through classes for encapsulation, templates for reusability, and namespaces for modular code.</p>
-<p><strong>Q3. What is volatile keyword in embedded C?</strong></p>
-<p><strong>A:</strong> It tells the compiler not to optimize a variable that can change unexpectedly (like hardware registers).</p>
-<p><strong>Q4. How do you manage memory in embedded C?</strong></p>
-<p><strong>A:</strong> Use static allocation, stack variables, and avoid heap where possible.</p>
-<p><strong>Q5. What are macros and how are they used in embedded systems?</strong></p>
-<p><strong>A:</strong> Macros are preprocessor definitions used for constants and conditional compilation.</p>
-<p><strong>Q6. What are the challenges of using pointers in embedded systems?</strong></p>
-<p><strong>A:</strong> Dangling pointers, null dereferencing, and memory corruption.</p>
-<p><strong>Q7. How do you organize code in a multi-module embedded project?</strong></p>
-<p><strong>A:</strong> Using header files, abstraction layers, and separation of concerns.</p>
-<p><strong>Q8. What is the use of bit manipulation in embedded code?</strong></p>
-<p><strong>A:</strong> Efficient control of hardware registers and flags.</p>
-<p><strong>Q9. How do you implement ISR (Interrupt Service Routines)?</strong></p>
-<p><strong>A:</strong> By registering hardware interrupt handlers and keeping them short and efficient.</p>
-<p><strong>Q10. What tools help maintain code quality in automotive development?</strong></p>
-<p><strong>A:</strong> MISRA checkers, SonarQube, Polyspace, static/dynamic analyzers.</p></div>
+<p><strong>Q1. What is system integration in automotive software?</strong><br />
+<strong>A:</strong> It involves combining software components and subsystems into a functioning whole, ensuring correct interaction and data exchange.</p>
+<p><strong>Q2. What is PREEvision used for?</strong><br />
+<strong>A:</strong> It is used for model-based wiring, network, and ECU architecture design.</p>
+<p><strong>Q3. What role does MagicDraw play?</strong><br />
+<strong>A:</strong> MagicDraw is used for system modeling, especially with SysML/UML diagrams, to design complex systems.</p>
+<p><strong>Q4. What is the difference between logical and physical architecture?</strong><br />
+<strong>A:</strong> Logical architecture defines functional blocks; physical architecture maps these blocks to hardware or ECUs.</p>
+<p><strong>Q5. What is an example of a zonal module?</strong><br />
+<strong>A:</strong> A zonal module could control multiple devices (lights, sensors) in a specific zone of the car, simplifying wiring and processing.</p>
+<p><strong>Q6. What are communication matrix files?</strong><br />
+<strong>A:</strong> They define signal routing across ECUs for CAN, LIN, or Ethernet networks.</p>
+<p><strong>Q7. What’s the use of .arxml files in system design?</strong><br />
+<strong>A:</strong> These describe AUTOSAR software components and interfaces for integration across tools.</p>
+<p><strong>Q8. What is signal interface mismatch during integration?</strong><br />
+<strong>A:</strong> It happens when signal names, data types, or sizes don't match across systems or components.</p>
+<p><strong>Q9. How is consistency maintained during system-level development?</strong><br />
+<strong>A:</strong> Through version control, interface agreements, and continuous integration testing.</p>
+<p><strong>Q10. What are safety considerations during system integration?</strong><br />
+<strong>A:</strong> Proper diagnostics, redundancy, signal validation, and watchdog implementations.</p></div>
             </div>
         </div>
 
