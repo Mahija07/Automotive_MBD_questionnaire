@@ -1,33 +1,62 @@
 site_name: AutoDev Vault
+site_description: A technical vault for Automotive MBD Developers
+site_url: https://mahija07.github.io/AutoDevVault/
+repo_url: https://github.com/Mahija07/Automotive_MBD_questionnaire
 theme:
   name: material
-  palette:
-    scheme: slate  # dark theme by default
-    primary: pink
-    accent: light pink
   features:
+    - navigation.expand
+    - navigation.top
+    - content.action.edit
+    - content.code.annotate
     - navigation.instant
-    - navigation.sections
     - navigation.tabs
-    - toc.integrate
     - search.suggest
     - search.highlight
-    - content.code.copy
-  icon:
-    logo: material/car  # or change to any Material Icon
-extra_css:
-  - styles/override.css
-extra_javascript:
-  - https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap
+  palette:
+    scheme: slate  # Default to dark theme
+    primary: pink
+    accent: yellow
+  font:
+    text: Roboto
+    code: Fira Code
+  favicon: images/favicon.ico  # Optional: Add your custom favicon
 
 nav:
   - Home: index.md
-  - Model-Based Development (MBD): mbd.md
-  - Code-Based Development (CBD): cbd.md
-  - Simulink: simulink.md
-  - Stateflow: stateflow.md
-  - AUTOSAR & RTE: autsar.md
-  - PolySpace & SonarQube: polyspace.md
-  - Tools & Scripting: tools.md
-  - Testing & Safety: testing.md
-  - System Design & Integration: system.md
+  - Model-Based Development:
+      - Overview: Model_Based_Development_QnA/mbd.md
+  - Code-Based Development:
+      - Overview: Code_Based_Development_QnA/cbd.md
+  - Simulink:
+      - Overview: Simulink_QnA/simulink.md
+  - Stateflow:
+      - Overview: Stateflow_QnA/stateflow.md
+  - AUTOSAR & RTE:
+      - Overview: AUTOSAR_QnA/autsar.md
+  - Polyspace & SonarQube:
+      - Overview: Polyspace_QnA/polyspace.md
+  - Tools & Scripting:
+      - Overview: Tools_Scripting_QnA/tools.md
+  - Testing & Safety:
+      - Overview: Testing_Safety_QnA/testing.md
+  - System Design & Integration:
+      - Overview: System_Design_QnA/system.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+  - def_list
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.details
+  - pymdownx.magiclink
+  - pymdownx.betterem
+
+extra_css:
+  - stylesheets/custom.css  # You can use this to further customize styles
