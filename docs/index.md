@@ -76,6 +76,10 @@ h1 {
   Dive into Model-Based Dev, Simulink, Coding, Testing & more!
 </div>
 
+ <footer>
+    Made with ❤️ by Mahija · Powered by MkDocs & GitHub Pages
+  </footer>
+
 <div class="grid">
 
 <a href="Model_Based_Development_QnA/mbd/" class="card">
