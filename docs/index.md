@@ -1,11 +1,16 @@
-# Automotive Q&A
+# Welcome to AutoDev Vault 🚗💡
 
-## Q1: What is MISRA C?
+This is your personal Q&A knowledge base for Model-Based and Code-Based Development in the automotive domain.
 
-MISRA C is a set of coding guidelines to ensure safety and reliability in C programming, especially in automotive software.
+Use the navigation links to explore:
+
+- 📘 **[Model-Based Development (MBD)](MBD.md)**  
+- 📙 **[Code-Based Development (CBD)](CBD.md)**  
+- 📗 **[Simulink Questions](Simulink.md)**  
+- 📕 **[Stateflow Questions](Stateflow.md)**  
 
 ---
 
-## Q2: What is a TLC file?
+Each section contains carefully curated questions and answers to help you prepare for interviews, learn deeply, or refresh your skills.
 
-TLC (Target Language Compiler) files help in generating custom C code from Simulink models.
+Happy Learning! 🚀
