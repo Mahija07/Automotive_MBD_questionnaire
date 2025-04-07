@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AutoDev Vault</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg-light: #f7f9fc;
@@ -11,10 +12,10 @@
       --text-light: #222;
       --accent: #005f73;
 
-      --bg-dark: #1e1e2f;
+      --bg-dark: #1a1a2e;
       --card-dark: #2e2e3e;
       --text-dark: #f0f0f0;
-      --accent-dark: #00b4d8;
+      --accent-dark: #00d9ff;
     }
 
     html[data-theme="light"] {
@@ -52,9 +53,11 @@
     }
 
     .logo {
-      font-size: 2.5rem;
+      font-family: 'Poppins', sans-serif;
+      font-size: 3rem;
       color: var(--accent);
-      animation: pulse 1.5s infinite alternate;
+      animation: pulse 1.8s infinite alternate;
+      letter-spacing: 1px;
     }
 
     @keyframes pulse {
@@ -104,7 +107,7 @@
       background-color: var(--card);
       border-radius: 15px;
       padding: 1.5rem;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       cursor: pointer;
       text-decoration: none;
@@ -113,7 +116,7 @@
 
     .card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
     }
 
     .card h3 {
@@ -129,7 +132,7 @@
       text-align: center;
       padding: 2rem 1rem;
       font-size: 0.85rem;
-      color: #777;
+      color: #aaa;
     }
   </style>
 </head>
@@ -161,7 +164,7 @@
     </section>
 
     <footer>
-      Made with ❤️ by Mahija · Powered by MkDocs & GitHub Pages
+      Made with ❤️ by Mahija · 
     </footer>
   </div>
 
@@ -169,7 +172,7 @@
     function toggleTheme() {
       const html = document.documentElement;
       const current = html.getAttribute('data-theme');
-      html.setAttribute('data-theme', current === 'light' ? 'dark' : 'light');
+      html.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
     }
   </script>
 </body>
