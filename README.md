@@ -15,7 +15,7 @@ This repo includes real-world Q&A from personal experience in the automotive dom
 ## 🌐 Live Site
 
 ✨ View the interactive site here:  
-👉 [AutoDev Vault – GitHub Pages](https://mahijaverma.github.io/autodev-vault)
+👉 [AutoDev Vault – GitHub Pages]([https://mahijaverma.github.io/autodev-vault](https://mahija07.github.io/Automotive_MBD_questionnaire/))
 
 ---
 
