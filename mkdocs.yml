@@ -1,1 +1,8 @@
 site_name: AutoDev Vault
+
+nav:
+  - Home: index.md
+  - Model-Based Development (MBD): mbd.md
+  - Code-Based Development (CBD): cbd.md
+  - Simulink: simulink.md
+  - Stateflow: stateflow.md
