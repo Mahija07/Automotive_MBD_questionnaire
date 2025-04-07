@@ -19,16 +19,7 @@ This repo includes real-world Q&A from personal experience in the automotive dom
 
 ---
 
-## 🧭 Explore by Topic
 
-| Topic | Description |
-|-------|-------------|
-| [⚙️ MBD - Model-Based Development](docs/mbd.md) | Simulation, code gen, TLC, SIL/MIL |
-| [💻 CBD - Code-Based Development](docs/cbd.md) | Embedded C, MISRA, GTest, unit testing |
-| [📊 Simulink](docs/simulink.md) | Solvers, block types, signals, subsystems |
-| [🔁 Stateflow](docs/stateflow.md) | States, events, charts, temporal logic |
-
----
 
 ## 🖼 Preview
 
