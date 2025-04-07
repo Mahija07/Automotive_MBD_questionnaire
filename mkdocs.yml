@@ -1,3 +1,5 @@
+site_name: AutoDev Vault
+
 nav:
   - Home: index.md
   - Model-Based Development (MBD): mbd.md
