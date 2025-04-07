@@ -1,63 +1,176 @@
-# 🚗 AutoDev Vault
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AutoDev Vault</title>
+  <style>
+    :root {
+      --bg-light: #f7f9fc;
+      --card-light: #ffffff;
+      --text-light: #222;
+      --accent: #005f73;
 
-Welcome to **AutoDev Vault** — your personal Q&A reference for Model-Based and Code-Based Development in the automotive domain.
+      --bg-dark: #1e1e2f;
+      --card-dark: #2e2e3e;
+      --text-dark: #f0f0f0;
+      --accent-dark: #00b4d8;
+    }
 
-Use this vault to prepare for interviews, revise concepts, and explore automotive software topics like Simulink, Stateflow, MBD, CBD, and more.
+    html[data-theme="light"] {
+      --bg: var(--bg-light);
+      --card: var(--card-light);
+      --text: var(--text-light);
+      --accent: var(--accent);
+    }
 
----
+    html[data-theme="dark"] {
+      --bg: var(--bg-dark);
+      --card: var(--card-dark);
+      --text: var(--text-dark);
+      --accent: var(--accent-dark);
+    }
 
-## 📚 Topics Covered
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
 
-| 🧠 Section | 🔍 Description |
-|-----------|----------------|
-| [⚙️ Model-Based Development (MBD)](mbd.md) | Simulink modeling, TLC, code generation, SIL, MIL |
-| [💻 Code-Based Development (CBD)](cbd.md) | Embedded C, MISRA, testing, integration |
-| [📊 Simulink](simulink.md) | Blocks, solvers, signals, masking, subsystems |
-| [🔁 Stateflow](stateflow.md) | States, transitions, temporal logic, hierarchy |
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
 
----
+    header {
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+      position: relative;
+    }
 
-## 💡 Sample Q&A Highlights
+    .logo {
+      font-size: 2.5rem;
+      color: var(--accent);
+      animation: pulse 1.5s infinite alternate;
+    }
 
-Click to view answers 👇
+    @keyframes pulse {
+      from {
+        transform: scale(1);
+        opacity: 0.8;
+      }
+      to {
+        transform: scale(1.05);
+        opacity: 1;
+      }
+    }
 
-<details>
-<summary><strong>❓ What is MISRA C?</strong></summary>
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 1rem auto 0;
+    }
 
-MISRA C is a set of coding standards developed to ensure safety, security, and portability of C code, primarily used in automotive and embedded systems.
+    .dark-toggle {
+      position: absolute;
+      top: 1rem;
+      right: 1.5rem;
+      background: none;
+      border: 2px solid var(--accent);
+      border-radius: 20px;
+      padding: 0.4rem 1rem;
+      cursor: pointer;
+      color: var(--accent);
+      font-weight: bold;
+      transition: background 0.3s, color 0.3s;
+    }
 
-</details>
+    .dark-toggle:hover {
+      background: var(--accent);
+      color: #fff;
+    }
 
-<details>
-<summary><strong>❓ What is the role of a TLC file in MBD?</strong></summary>
+    .topics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
 
-TLC (Target Language Compiler) files define how Simulink models are translated into C code during the code generation process.
+    .card {
+      background-color: var(--card);
+      border-radius: 15px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+    }
 
-</details>
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
 
-<details>
-<summary><strong>❓ What is the difference between SIL and PIL testing?</strong></summary>
+    .card h3 {
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
 
-- **SIL (Software-in-the-loop)** simulates your code on a PC.
-- **PIL (Processor-in-the-loop)** runs the code on the actual hardware or target microcontroller.
+    .card p {
+      font-size: 0.95rem;
+    }
 
-</details>
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.85rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">🚗 AutoDev Vault</div>
+      <p>Your go-to resource for mastering Model-Based & Code-Based Development in the automotive world. Explore topics, revise for interviews, and grow your expertise!</p>
+      <button class="dark-toggle" onclick="toggleTheme()">🌗 Toggle Theme</button>
+    </header>
 
----
+    <section class="topics">
+      <a class="card" href="mbd.md">
+        <h3>⚙️ Model-Based Development</h3>
+        <p>Explore TLC, Simulink Integration, SIL/MIL, and code generation concepts.</p>
+      </a>
+      <a class="card" href="cbd.md">
+        <h3>💻 Code-Based Development</h3>
+        <p>From MISRA C to unit testing and embedded software workflows.</p>
+      </a>
+      <a class="card" href="simulink.md">
+        <h3>📊 Simulink</h3>
+        <p>Dive into modeling, subsystems, solvers, masking, and simulations.</p>
+      </a>
+      <a class="card" href="stateflow.md">
+        <h3>🔁 Stateflow</h3>
+        <p>Understand events, states, temporal logic, and control logic modeling.</p>
+      </a>
+    </section>
 
-## 🧭 Tips
+    <footer>
+      Made with ❤️ by Mahija · Powered by MkDocs & GitHub Pages
+    </footer>
+  </div>
 
-!!! tip
-    Use this site regularly to revise important technical concepts in a clean, distraction-free way.
-
-!!! note
-    You can expand each topic from the side menu or click the links above to go directly to that section.
-
-!!! warning
-    Don’t forget to keep this repo private if it includes proprietary content or interview questions you've collected from work.
-
----
-
-**Happy Learning & Keep Building! 🔧**
-
-*Made with ❤️ by Mahija*
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const current = html.getAttribute('data-theme');
+      html.setAttribute('data-theme', current === 'light' ? 'dark' : 'light');
+    }
+  </script>
+</body>
+</html>
