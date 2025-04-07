@@ -1,0 +1,28 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Enhancements */
+.md-header {
+  background: linear-gradient(90deg, #007cf0, #00dfd8);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.md-header__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff !important;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.md-tabs {
+  background-color: transparent;
+  font-weight: 600;
+}
+
+/* Remove the white bubble (search bar) */
+.md-search__form {
+  display: none !important;
+}
