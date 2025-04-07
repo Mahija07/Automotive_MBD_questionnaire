@@ -49,6 +49,21 @@
                             <li class="nav-item">
                                 <a href="../Stateflow/" class="nav-link">Stateflow</a>
                             </li>
+                            <li class="nav-item">
+                                <a href="../autsar/" class="nav-link">AUTOSAR & RTE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../polyspace/" class="nav-link">PolySpace & SonarQube</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../tools/" class="nav-link">Tools & Scripting</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../testing/" class="nav-link">Testing & Safety</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../system/" class="nav-link">System Design & Integration</a>
+                            </li>
                         </ul>
 
                     <ul class="nav navbar-nav ms-md-auto">
@@ -85,13 +100,14 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#automotive-qa" class="nav-link">Automotive Q&amp;A</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#q1-what-is-misra-c" class="nav-link">Q1: What is MISRA C?</a>
+            <li class="nav-item" data-bs-level="2"><a href="#title-model-based-development-mbd" class="nav-link">title: Model-Based Development (MBD)</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#q2-what-is-a-tlc-file" class="nav-link">Q2: What is a TLC file?</a>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#model-based-development-mbd" class="nav-link">⚙️ Model-Based Development (MBD)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#sample-qa" class="nav-link">Sample Q&amp;A</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -102,12 +118,39 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="automotive-qa">Automotive Q&amp;A</h1>
-<h2 id="q1-what-is-misra-c">Q1: What is MISRA C?</h2>
-<p>MISRA C is a set of coding guidelines to ensure safety and reliability in C programming, especially in automotive software.</p>
 <hr />
-<h2 id="q2-what-is-a-tlc-file">Q2: What is a TLC file?</h2>
-<p>TLC (Target Language Compiler) files help in generating custom C code from Simulink models.</p></div>
+<h2 id="title-model-based-development-mbd">title: Model-Based Development (MBD)</h2>
+<h1 id="model-based-development-mbd">⚙️ Model-Based Development (MBD)</h1>
+<p>Explore questions and answers related to:</p>
+<ul>
+<li>Simulink fundamentals</li>
+<li>Stateflow design</li>
+<li>MIL/SIL workflows</li>
+<li>TLC file configurations</li>
+<li>Model architecture best practices</li>
+</ul>
+<hr />
+<h2 id="sample-qa">Sample Q&amp;A</h2>
+<p><strong>Q1. What is the difference between MIL and SIL testing?</strong></p>
+<p><strong>A:</strong> MIL (Model-in-the-loop) testing is performed on the Simulink model, while SIL (Software-in-the-loop) testing is done using generated C code compiled and run on a PC environment.</p>
+<p><strong>Q2. What is a TLC file and its role in code generation?</strong></p>
+<p><strong>A:</strong> TLC (Target Language Compiler) files define how Simulink blocks generate C code, and can be customized for target-specific code.</p>
+<p><strong>Q3. How can you ensure model reusability in MBD?</strong></p>
+<p><strong>A:</strong> Use library blocks, masked subsystems, and referenced models for modularity and reuse.</p>
+<p><strong>Q4. What are configuration parameters in Simulink used for?</strong></p>
+<p><strong>A:</strong> These define solver, data import/export, code generation, and optimization settings for a model.</p>
+<p><strong>Q5. What are the advantages of Model-Based Design?</strong></p>
+<p><strong>A:</strong> Rapid prototyping, early validation, automatic code generation, and traceability.</p>
+<p><strong>Q6. What are the common issues faced in MBD workflows?</strong></p>
+<p><strong>A:</strong> Integration of large models, tool compatibility, code traceability, and solver-related issues.</p>
+<p><strong>Q7. How do you handle conditional execution in Simulink?</strong></p>
+<p><strong>A:</strong> Using enabled/triggered subsystems and switch/case blocks.</p>
+<p><strong>Q8. What is signal logging in MBD?</strong></p>
+<p><strong>A:</strong> Capturing simulation signal data for debugging and analysis.</p>
+<p><strong>Q9. What is model referencing and why is it used?</strong></p>
+<p><strong>A:</strong> It allows you to use a model inside another model for modular development and parallel team workflows.</p>
+<p><strong>Q10. How do you test a Simulink model before code generation?</strong></p>
+<p><strong>A:</strong> Using simulation, assertions, test harnesses, and Simulink Test.</p></div>
             </div>
         </div>
 

@@ -49,6 +49,21 @@
                             <li class="nav-item">
                                 <a href="../Stateflow/" class="nav-link">Stateflow</a>
                             </li>
+                            <li class="nav-item">
+                                <a href="../autsar/" class="nav-link">AUTOSAR & RTE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../polyspace/" class="nav-link">PolySpace & SonarQube</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../tools/" class="nav-link">Tools & Scripting</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../testing/" class="nav-link">Testing & Safety</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../system/" class="nav-link">System Design & Integration</a>
+                            </li>
                         </ul>
 
                     <ul class="nav navbar-nav ms-md-auto">
@@ -85,16 +100,13 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#automotive-qa" class="nav-link">Automotive Q&amp;A</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#q1-what-is-misra-c" class="nav-link">Q1: What is MISRA C?</a>
+            <li class="nav-item" data-bs-level="2"><a href="#title-simulink" class="nav-link">title: Simulink</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#q2-what-is-a-tlc-file" class="nav-link">Q2: What is a TLC file?</a>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#simulink" class="nav-link">📊 Simulink</a>
               <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
         </ul>
@@ -102,12 +114,37 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="automotive-qa">Automotive Q&amp;A</h1>
-<h2 id="q1-what-is-misra-c">Q1: What is MISRA C?</h2>
-<p>MISRA C is a set of coding guidelines to ensure safety and reliability in C programming, especially in automotive software.</p>
 <hr />
-<h2 id="q2-what-is-a-tlc-file">Q2: What is a TLC file?</h2>
-<p>TLC (Target Language Compiler) files help in generating custom C code from Simulink models.</p></div>
+<h2 id="title-simulink">title: Simulink</h2>
+<h1 id="simulink">📊 Simulink</h1>
+<p>Topics covered:</p>
+<ul>
+<li>Modeling tips</li>
+<li>Solver configuration</li>
+<li>Block-level settings</li>
+<li>Model referencing</li>
+</ul>
+<hr />
+<p><strong>Q1. What is the difference between a masked subsystem and a library block?</strong></p>
+<p><strong>A:</strong> A masked subsystem encapsulates logic and hides complexity, while a library block is reusable across multiple models.</p>
+<p><strong>Q2. What are solvers in Simulink?</strong></p>
+<p><strong>A:</strong> Solvers compute model outputs over time. They can be fixed-step or variable-step depending on system requirements.</p>
+<p><strong>Q3. What is sample time and how is it configured?</strong></p>
+<p><strong>A:</strong> It defines when a block executes. It can be inherited, fixed, or triggered.</p>
+<p><strong>Q4. How do you debug a Simulink model?</strong></p>
+<p><strong>A:</strong> Using breakpoints, scopes, data inspectors, and signal logging.</p>
+<p><strong>Q5. What is Simulink Data Dictionary?</strong></p>
+<p><strong>A:</strong> It provides a centralized data management approach for models.</p>
+<p><strong>Q6. What is the benefit of model referencing?</strong></p>
+<p><strong>A:</strong> Enables componentization and parallel team workflows.</p>
+<p><strong>Q7. What are parameter tunings and how are they done?</strong></p>
+<p><strong>A:</strong> Parameters can be changed during simulation or runtime via Simulink Dashboard blocks or scripts.</p>
+<p><strong>Q8. What does a Bus Creator do?</strong></p>
+<p><strong>A:</strong> Combines multiple signals into a single structured signal (bus).</p>
+<p><strong>Q9. What is function-call subsystem?</strong></p>
+<p><strong>A:</strong> A subsystem that executes when a control signal triggers it.</p>
+<p><strong>Q10. How do you avoid algebraic loops in Simulink?</strong></p>
+<p><strong>A:</strong> Use delays or memory blocks to break feedback paths.</p></div>
             </div>
         </div>
 

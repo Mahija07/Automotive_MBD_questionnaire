@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Code-Based Development (CBD) - AutoDev Vault</title>
+        <title>PolySpace & SonarQube - AutoDev Vault</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/fontawesome.min.css" rel="stylesheet">
         <link href="../css/brands.min.css" rel="stylesheet">
@@ -41,7 +41,7 @@
                                 <a href="../MBD/" class="nav-link">Model-Based Development (MBD)</a>
                             </li>
                             <li class="nav-item">
-                                <a href="./" class="nav-link active" aria-current="page">Code-Based Development (CBD)</a>
+                                <a href="../CBD/" class="nav-link">Code-Based Development (CBD)</a>
                             </li>
                             <li class="nav-item">
                                 <a href="../Simulink/" class="nav-link">Simulink</a>
@@ -53,7 +53,7 @@
                                 <a href="../autsar/" class="nav-link">AUTOSAR & RTE</a>
                             </li>
                             <li class="nav-item">
-                                <a href="../polyspace/" class="nav-link">PolySpace & SonarQube</a>
+                                <a href="./" class="nav-link active" aria-current="page">PolySpace & SonarQube</a>
                             </li>
                             <li class="nav-item">
                                 <a href="../tools/" class="nav-link">Tools & Scripting</a>
@@ -73,12 +73,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../MBD/" class="nav-link">
+                                <a rel="prev" href="../autsar/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../Simulink/" class="nav-link">
+                                <a rel="next" href="../tools/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -100,12 +100,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="2"><a href="#title-code-based-development-cbd" class="nav-link">title: Code-Based Development (CBD)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-bs-level="1"><a href="#code-based-development-cbd" class="nav-link">💻 Code-Based Development (CBD)</a>
+            <li class="nav-item" data-bs-level="1"><a href="#polyspace-sonarqube" class="nav-link">🧪 Polyspace &amp; SonarQube</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-bs-level="2"><a href="#sample-qa" class="nav-link">Sample Q&amp;A</a>
               <ul class="nav flex-column">
@@ -118,38 +113,30 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<hr />
-<h2 id="title-code-based-development-cbd">title: Code-Based Development (CBD)</h2>
-<h1 id="code-based-development-cbd">💻 Code-Based Development (CBD)</h1>
-<p>This section includes:</p>
-<ul>
-<li>Embedded C and C++ fundamentals</li>
-<li>MISRA C rules</li>
-<li>Manual code development for automotive applications</li>
-<li>Best practices for maintainable and scalable code</li>
-</ul>
+<h1 id="polyspace-sonarqube">🧪 Polyspace &amp; SonarQube</h1>
+<p>This section focuses on static analysis tools used in the automotive domain for quality assurance and safety compliance.</p>
 <hr />
 <h2 id="sample-qa">Sample Q&amp;A</h2>
-<p><strong>Q1. What are some key MISRA C rules to follow in automotive software?</strong></p>
-<p><strong>A:</strong> Avoid dynamic memory allocation, ensure explicit type casting, and prevent use of unrestricted pointers.</p>
-<p><strong>Q2. How can C++ be used in embedded systems?</strong></p>
-<p><strong>A:</strong> Through classes for encapsulation, templates for reusability, and namespaces for modular code.</p>
-<p><strong>Q3. What is volatile keyword in embedded C?</strong></p>
-<p><strong>A:</strong> It tells the compiler not to optimize a variable that can change unexpectedly (like hardware registers).</p>
-<p><strong>Q4. How do you manage memory in embedded C?</strong></p>
-<p><strong>A:</strong> Use static allocation, stack variables, and avoid heap where possible.</p>
-<p><strong>Q5. What are macros and how are they used in embedded systems?</strong></p>
-<p><strong>A:</strong> Macros are preprocessor definitions used for constants and conditional compilation.</p>
-<p><strong>Q6. What are the challenges of using pointers in embedded systems?</strong></p>
-<p><strong>A:</strong> Dangling pointers, null dereferencing, and memory corruption.</p>
-<p><strong>Q7. How do you organize code in a multi-module embedded project?</strong></p>
-<p><strong>A:</strong> Using header files, abstraction layers, and separation of concerns.</p>
-<p><strong>Q8. What is the use of bit manipulation in embedded code?</strong></p>
-<p><strong>A:</strong> Efficient control of hardware registers and flags.</p>
-<p><strong>Q9. How do you implement ISR (Interrupt Service Routines)?</strong></p>
-<p><strong>A:</strong> By registering hardware interrupt handlers and keeping them short and efficient.</p>
-<p><strong>Q10. What tools help maintain code quality in automotive development?</strong></p>
-<p><strong>A:</strong> MISRA checkers, SonarQube, Polyspace, static/dynamic analyzers.</p></div>
+<p><strong>Q1. What is Polyspace used for?</strong><br />
+<strong>A:</strong> Polyspace is a static analysis tool that detects runtime errors, code defects, and MISRA violations in embedded C/C++ code.</p>
+<p><strong>Q2. How does Polyspace detect runtime errors without executing code?</strong><br />
+<strong>A:</strong> It performs formal methods analysis based on abstract interpretation to mathematically prove the absence of certain runtime errors.</p>
+<p><strong>Q3. What are some key error categories Polyspace highlights?</strong><br />
+<strong>A:</strong> Division by zero, out-of-bounds array access, null pointer dereferencing, and uninitialized variables.</p>
+<p><strong>Q4. What does a green code annotation mean in Polyspace?</strong><br />
+<strong>A:</strong> It indicates the absence of runtime errors (code is proven safe).</p>
+<p><strong>Q5. What are red annotations in Polyspace?</strong><br />
+<strong>A:</strong> Red highlights indicate definite runtime errors that must be fixed.</p>
+<p><strong>Q6. How is SonarQube different from Polyspace?</strong><br />
+<strong>A:</strong> SonarQube is more focused on code quality, maintainability, and code smells, whereas Polyspace targets safety and runtime issues.</p>
+<p><strong>Q7. What types of metrics does SonarQube provide?</strong><br />
+<strong>A:</strong> Code smells, cyclomatic complexity, duplication, code coverage, bugs, and vulnerabilities.</p>
+<p><strong>Q8. Can SonarQube be integrated with Jenkins or GitHub?</strong><br />
+<strong>A:</strong> Yes, it integrates easily with CI/CD pipelines and version control systems.</p>
+<p><strong>Q9. How do you handle MISRA compliance in Polyspace?</strong><br />
+<strong>A:</strong> Use rule checkers and configure the analysis for specific versions of MISRA standards.</p>
+<p><strong>Q10. What is the benefit of using both tools?</strong><br />
+<strong>A:</strong> Polyspace ensures safety and standards compliance; SonarQube ensures maintainability and quality.</p></div>
             </div>
         </div>
 

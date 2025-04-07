@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Code-Based Development (CBD) - AutoDev Vault</title>
+        <title>AUTOSAR & RTE - AutoDev Vault</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/fontawesome.min.css" rel="stylesheet">
         <link href="../css/brands.min.css" rel="stylesheet">
@@ -41,7 +41,7 @@
                                 <a href="../MBD/" class="nav-link">Model-Based Development (MBD)</a>
                             </li>
                             <li class="nav-item">
-                                <a href="./" class="nav-link active" aria-current="page">Code-Based Development (CBD)</a>
+                                <a href="../CBD/" class="nav-link">Code-Based Development (CBD)</a>
                             </li>
                             <li class="nav-item">
                                 <a href="../Simulink/" class="nav-link">Simulink</a>
@@ -50,7 +50,7 @@
                                 <a href="../Stateflow/" class="nav-link">Stateflow</a>
                             </li>
                             <li class="nav-item">
-                                <a href="../autsar/" class="nav-link">AUTOSAR & RTE</a>
+                                <a href="./" class="nav-link active" aria-current="page">AUTOSAR & RTE</a>
                             </li>
                             <li class="nav-item">
                                 <a href="../polyspace/" class="nav-link">PolySpace & SonarQube</a>
@@ -73,12 +73,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../MBD/" class="nav-link">
+                                <a rel="prev" href="../Stateflow/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../Simulink/" class="nav-link">
+                                <a rel="next" href="../polyspace/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -100,17 +100,8 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="2"><a href="#title-code-based-development-cbd" class="nav-link">title: Code-Based Development (CBD)</a>
+            <li class="nav-item" data-bs-level="1"><a href="#autosar-rte-layer" class="nav-link">🧩 AUTOSAR RTE Layer</a>
               <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-bs-level="1"><a href="#code-based-development-cbd" class="nav-link">💻 Code-Based Development (CBD)</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#sample-qa" class="nav-link">Sample Q&amp;A</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
         </ul>
@@ -118,38 +109,32 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
+<h1 id="autosar-rte-layer">🧩 AUTOSAR RTE Layer</h1>
+<p>Explore questions related to:
+- RTE Generation
+- Communication Interfaces
+- SWC integration</p>
 <hr />
-<h2 id="title-code-based-development-cbd">title: Code-Based Development (CBD)</h2>
-<h1 id="code-based-development-cbd">💻 Code-Based Development (CBD)</h1>
-<p>This section includes:</p>
-<ul>
-<li>Embedded C and C++ fundamentals</li>
-<li>MISRA C rules</li>
-<li>Manual code development for automotive applications</li>
-<li>Best practices for maintainable and scalable code</li>
-</ul>
-<hr />
-<h2 id="sample-qa">Sample Q&amp;A</h2>
-<p><strong>Q1. What are some key MISRA C rules to follow in automotive software?</strong></p>
-<p><strong>A:</strong> Avoid dynamic memory allocation, ensure explicit type casting, and prevent use of unrestricted pointers.</p>
-<p><strong>Q2. How can C++ be used in embedded systems?</strong></p>
-<p><strong>A:</strong> Through classes for encapsulation, templates for reusability, and namespaces for modular code.</p>
-<p><strong>Q3. What is volatile keyword in embedded C?</strong></p>
-<p><strong>A:</strong> It tells the compiler not to optimize a variable that can change unexpectedly (like hardware registers).</p>
-<p><strong>Q4. How do you manage memory in embedded C?</strong></p>
-<p><strong>A:</strong> Use static allocation, stack variables, and avoid heap where possible.</p>
-<p><strong>Q5. What are macros and how are they used in embedded systems?</strong></p>
-<p><strong>A:</strong> Macros are preprocessor definitions used for constants and conditional compilation.</p>
-<p><strong>Q6. What are the challenges of using pointers in embedded systems?</strong></p>
-<p><strong>A:</strong> Dangling pointers, null dereferencing, and memory corruption.</p>
-<p><strong>Q7. How do you organize code in a multi-module embedded project?</strong></p>
-<p><strong>A:</strong> Using header files, abstraction layers, and separation of concerns.</p>
-<p><strong>Q8. What is the use of bit manipulation in embedded code?</strong></p>
-<p><strong>A:</strong> Efficient control of hardware registers and flags.</p>
-<p><strong>Q9. How do you implement ISR (Interrupt Service Routines)?</strong></p>
-<p><strong>A:</strong> By registering hardware interrupt handlers and keeping them short and efficient.</p>
-<p><strong>Q10. What tools help maintain code quality in automotive development?</strong></p>
-<p><strong>A:</strong> MISRA checkers, SonarQube, Polyspace, static/dynamic analyzers.</p></div>
+<p><strong>Q1. What is the role of RTE in AUTOSAR?</strong></p>
+<p><strong>A:</strong> RTE (Run-Time Environment) is the middleware between application software components and the basic software.</p>
+<p><strong>Q2. How is an RTE generated?</strong></p>
+<p><strong>A:</strong> It is generated from ARXML files using AUTOSAR tools like DaVinci Developer.</p>
+<p><strong>Q3. What are Sender-Receiver and Client-Server interfaces?</strong></p>
+<p><strong>A:</strong> Sender-Receiver is for asynchronous data communication; Client-Server is for synchronous service calls.</p>
+<p><strong>Q4. How are ports defined in RTE?</strong></p>
+<p><strong>A:</strong> Using Port Prototypes in SWCs for input/output and service access.</p>
+<p><strong>Q5. What are runnable entities?</strong></p>
+<p><strong>A:</strong> Functions triggered by events like timing or data reception.</p>
+<p><strong>Q6. What is the significance of ARXML files?</strong></p>
+<p><strong>A:</strong> They contain metadata for software and system configuration.</p>
+<p><strong>Q7. How is timing behavior handled in RTE?</strong></p>
+<p><strong>A:</strong> With periodic or event-driven triggers configured in the BSW scheduler.</p>
+<p><strong>Q8. What is an ECU Extract?</strong></p>
+<p><strong>A:</strong> A collection of ARXMLs representing the software stack and mappings for an ECU.</p>
+<p><strong>Q9. How do you trace signal flow in RTE?</strong></p>
+<p><strong>A:</strong> Using signal mapping between PPort and RPort and examining ARXML definitions.</p>
+<p><strong>Q10. What tools are commonly used for RTE?</strong></p>
+<p><strong>A:</strong> Vector DaVinci Developer, Elektrobit Tresos, and ARXML viewers.</p></div>
             </div>
         </div>
 
