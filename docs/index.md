@@ -143,10 +143,10 @@
   </section>
 
   <section class="topics">
-    <a class="card" href="MBD.md"><h3>⚙️ Model-Based Development</h3><p>Simulink | Stateflow | TLC | SIL | MIL</p></a>
-    <a class="card" href="CBD.md"><h3>💻 Code-Based Development</h3><p>C | Embedded C | MISRA | Unit Testing</p></a>
-    <a class="card" href="Simulink.md"><h3>📊 Simulink</h3><p>Subsystems | Masking | Solvers</p></a>
-    <a class="card" href="Stateflow.md"><h3>🔁 Stateflow</h3><p>Events | States | Logic | Transitions</p></a>
+    <a class="card" href="mbd.md"><h3>⚙️ Model-Based Development</h3><p>Simulink | Stateflow | TLC | SIL | MIL</p></a>
+    <a class="card" href="cbd.md"><h3>💻 Code-Based Development</h3><p>C | Embedded C | MISRA | Unit Testing</p></a>
+    <a class="card" href="simulink.md"><h3>📊 Simulink</h3><p>Subsystems | Masking | Solvers</p></a>
+    <a class="card" href="stateflow.md"><h3>🔁 Stateflow</h3><p>Events | States | Logic | Transitions</p></a>
     <a class="card" href="autsar.md"><h3>🧩 AUTOSAR & RTE</h3><p>Modules | RTE | Com Stack</p></a>
     <a class="card" href="polyspace.md"><h3>📋 PolySpace & SonarQube</h3><p>Static Analysis & Compliance</p></a>
     <a class="card" href="tools.md"><h3>🛠 Tools & Scripting</h3><p>MATLAB | M-Scripting | Python | Git | VSCode</p></a>

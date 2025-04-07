@@ -3,8 +3,8 @@ theme:
   name: material
   palette:
     scheme: slate  # dark theme by default
-    primary: blue
-    accent: light blue
+    primary: pink
+    accent: light pink
   features:
     - navigation.instant
     - navigation.sections
