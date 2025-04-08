@@ -69,7 +69,7 @@ h1 {
 }
 </style>
 
-# 🚗 AutoDev Vault
+# 🚗 AutoDev Vault by Mahija
 
 <div class="intro">
   A comprehensive technical vault for Automotive engineers.<br>
