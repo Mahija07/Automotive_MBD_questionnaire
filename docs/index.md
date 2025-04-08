@@ -99,17 +99,17 @@ h1 {
   
 </a>
 
-<a href="Tools_Scripting_QnA/tools/" class="card">
+<a href="coming_soon/" class="card">
   <h2>🛠️ Tools & Scripting</h2>
   <p>MATLAB | Python | Git | VSCode | Automation</p>
 </a>
 
-<a href="Testing_Safety_QnA/testing/" class="card">
+<a href="coming_soon_test/" class="card">
   <h2>✅ Testing & Safety</h2>
   <p>GoogleTest | ISO 26262 | JIRA | Safety Standards</p>
 </a>
 
-<a href="System_Design_QnA/system/" class="card">
+<a href="coming_soon_sys" class="card">
   <h2>🔧 System Design & Integration</h2>
   <p>Prevision | Zonal Architecture | MagicDraw</p>
 </a>
