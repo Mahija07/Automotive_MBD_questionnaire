@@ -65,5 +65,3 @@ markdown_extensions:
   - pymdownx.magiclink
   - pymdownx.betterem
 
-extra_css:
-  - stylesheets/custom.css  # You can use this to further customize styles
