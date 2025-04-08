@@ -80,7 +80,7 @@ h1 {
 
 <a href="Model_Based_Development_QnA/mbd/" class="card">
   <h2>🧠 Model-Based Development</h2>
-  <p>Simulink | Stateflow | TLC | MIL | SIL | Integration</p>
+  <p>Simulink | Stateflow | TLC | MIL | SIL </p>
 </a>
 
 <a href="Code_Based_Development_QnA/cbd/" class="card">
@@ -88,24 +88,15 @@ h1 {
   <p>Embedded C | MISRA | Unit Testing | Coding Guidelines</p>
 </a>
 
-<a href="Simulink_QnA/simulink/" class="card">
-  <h2>📊 Simulink</h2>
-  <p>Modeling | Sample times | Solver Configs | Masking</p>
-</a>
-
-<a href="Stateflow_QnA/stateflow/" class="card">
-  <h2>🔄 Stateflow</h2>
-  <p>States | Events | Transitions | Temporal Logic</p>
-</a>
-
 <a href="AUTOSAR_QnA/autsar/" class="card">
-  <h2>⚙️ AUTOSAR & RTE</h2>
+  <h2>⚙️ AUTOSAR & RTE</h2> 
   <p>SWCs | Ports | RTE | ComStack | Interfaces</p>
 </a>
 
 <a href="Polyspace_QnA/polyspace/" class="card">
-  <h2>🧪 Polyspace & SonarQube</h2>
-  <p>Static Analysis | Runtime Errors | MISRA Violations</p>
+  <h2>🧪 software quality and safety standards/tools</h2>
+  <p>POLYSPACE | SONARQUBE | MISRA C Violations | ISO-26262</p>
+  
 </a>
 
 <a href="Tools_Scripting_QnA/tools/" class="card">

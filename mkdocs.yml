@@ -1,4 +1,5 @@
-site_name: AutoDev Vault
+site_name: AutoDev Vault by Mahija
+site_author: Mahija07
 site_description: A technical vault for Automotive MBD Developers
 site_url: https://mahija07.github.io/AutoDevVault/
 repo_url: https://github.com/Mahija07/Automotive_MBD_questionnaire
@@ -7,7 +8,6 @@ theme:
   features:
     - navigation.expand
     - navigation.top
-    - content.action.edit
     - content.code.annotate
     - navigation.instant
     - navigation.tabs
@@ -24,24 +24,31 @@ theme:
 
 nav:
   - Home: index.md
+  - Feedback & Contact: feedback.md
   - Model-Based Development:
-      - Overview: Model_Based_Development_QnA/mbd.md
+      - MBD: Model_Based_Development_QnA/mbd.md
+      - Simulink: Model_Based_Development_QnA/Simulink_QnA/simulink.md
+      - Stateflow: Model_Based_Development_QnA/Stateflow_QnA/stateflow.md
+      - TLC: Model_Based_Development_QnA/TLC_QnA/TLC.md
+      - MIL: Model_Based_Development_QnA/MIL_QnA/MIL.md
+      - SIL: Model_Based_Development_QnA/SIL_QnA/SIL.md
   - Code-Based Development:
-      - Overview: Code_Based_Development_QnA/cbd.md
-  - Simulink:
-      - Overview: Simulink_QnA/simulink.md
-  - Stateflow:
-      - Overview: Stateflow_QnA/stateflow.md
+      - CBD: Code_Based_Development_QnA/cbd.md
   - AUTOSAR & RTE:
-      - Overview: AUTOSAR_QnA/autsar.md
-  - Polyspace & SonarQube:
-      - Overview: Polyspace_QnA/polyspace.md
+      - AUTOSAR: AUTOSAR_QnA/autsar.md
+  - Software Quality and Safety Standards/Tools:
+    - Tools:
+      - Polyspace: Polyspace_QnA/polyspace.md
+      - SonarQube: Polyspace_QnA/sonarqube.md
+    - Standards:
+      - MISRA C Guidelines: Polyspace_QnA/Standards/MISRA_C_Guidelines.md
+      - ISO 26262: Polyspace_QnA/Standards/ISO-26262.md
   - Tools & Scripting:
-      - Overview: Tools_Scripting_QnA/tools.md
+      - MATLAB: coming_soon.md
   - Testing & Safety:
-      - Overview: Testing_Safety_QnA/testing.md
+      - Google-Test: coming_soon_Test.md
   - System Design & Integration:
-      - Overview: System_Design_QnA/system.md
+      - Zonal-Architecture: coming_soon_Sys.md
 
 markdown_extensions:
   - toc:
