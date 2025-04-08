@@ -76,45 +76,124 @@ h1 {
   Dive into Model-Based Dev, Simulink, Coding, Testing & more!
 </div>
 
-<div class="grid">
+<div class="card-grid">
 
-<a href="Model_Based_Development_QnA/mbd/" class="card">
-  <h2>🧠 Model-Based Development</h2>
-  <p>Simulink | Stateflow | TLC | MIL | SIL </p>
-</a>
+  <!-- Model-Based Development -->
+  <div class="card-flip">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>🧠 Model-Based Development</h2>
+        <p>Simulink | Stateflow | TLC | MIL | SIL</p>
+      </div>
+      <div class="card-back">
+        <h3>Explore Subtopics</h3>
+        <ul class="sub-links">
+          <li><a href="Model_Based_Development_QnA/mbd/">Overview</a></li>
+          <li><a href="Model_Based_Development_QnA/simulink_QnA/simulink/">Simulink</a></li>
+          <li><a href="Model_Based_Development_QnA/stateflow_QnA/stateflow/">Stateflow</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-<a href="Code_Based_Development_QnA/cbd/" class="card">
-  <h2>💻 Code-Based Development</h2>
-  <p>Embedded C | MISRA | Unit Testing | Coding Guidelines</p>
-</a>
+  <!-- Code-Based Development -->
+  <div class="card-flip">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>💻 Code-Based Development</h2>
+        <p>Embedded C | MISRA | Unit Testing | Coding Guidelines</p>
+      </div>
+      <div class="card-back">
+        <h3>Explore Subtopics</h3>
+        <ul class="sub-links">
+          <li><a href="Code_Based_Development_QnA/cbd/">All Topics</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-<a href="AUTOSAR_QnA/autsar/" class="card">
-  <h2>⚙️ AUTOSAR & RTE</h2> 
-  <p>SWCs | Ports | RTE | ComStack | Interfaces</p>
-</a>
+  <!-- AUTOSAR -->
+  <div class="card-flip">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>⚙️ AUTOSAR & RTE</h2>
+        <p>SWCs | Ports | RTE | ComStack | Interfaces</p>
+      </div>
+      <div class="card-back">
+        <h3>Explore Subtopics</h3>
+        <ul class="sub-links">
+          <li><a href="AUTOSAR_QnA/autsar/">All Topics</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-<a href="Polyspace_QnA/polyspace/" class="card">
-  <h2>🧪 software quality and safety standards/tools</h2>
-  <p>POLYSPACE | SONARQUBE | MISRA C Violations | ISO-26262</p>
-  
-</a>
+  <!-- Software Quality -->
+  <div class="card-flip">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>🧪 Software Quality & Safety</h2>
+        <p>POLYSPACE | SONARQUBE | MISRA C | ISO-26262</p>
+      </div>
+      <div class="card-back">
+        <h3>Explore Subtopics</h3>
+        <ul class="sub-links">
+          <li><a href="Polyspace_QnA/polyspace/">Polyspace</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-<a href="coming_soon/" class="card">
-  <h2>🛠️ Tools & Scripting</h2>
-  <p>MATLAB | Python | Git | VSCode | Automation</p>
-</a>
+  <!-- Tools & Scripting -->
+  <div class="card-flip">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>🛠️ Tools & Scripting</h2>
+        <p>MATLAB | Python | Git | VSCode | Automation</p>
+      </div>
+      <div class="card-back">
+        <h3>Coming Soon</h3>
+        <ul class="sub-links">
+          <li><a href="coming_soon/">Preview Tools</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-<a href="coming_soon_test/" class="card">
-  <h2>✅ Testing & Safety</h2>
-  <p>GoogleTest | ISO 26262 | JIRA | Safety Standards</p>
-</a>
+  <!-- Testing & Safety -->
+  <div class="card-flip">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>✅ Testing & Safety</h2>
+        <p>GoogleTest | ISO 26262 | JIRA | Safety Standards</p>
+      </div>
+      <div class="card-back">
+        <h3>Coming Soon</h3>
+        <ul class="sub-links">
+          <li><a href="coming_soon_test/">Preview Topics</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-<a href="coming_soon_sys" class="card">
-  <h2>🔧 System Design & Integration</h2>
-  <p>Prevision | Zonal Architecture | MagicDraw</p>
-</a>
+  <!-- System Design & Integration -->
+  <div class="card-flip">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>🔧 System Design & Integration</h2>
+        <p>Prevision | Zonal Architecture | MagicDraw</p>
+      </div>
+      <div class="card-back">
+        <h3>Coming Soon</h3>
+        <ul class="sub-links">
+          <li><a href="coming_soon_sys/">Preview Topics</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
 </div>
+
 
  <footer>
     Made with ❤️ by Mahija · Powered by MkDocs & GitHub Pages

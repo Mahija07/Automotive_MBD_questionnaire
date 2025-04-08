@@ -26,17 +26,18 @@ nav:
   - Home: index.md
   - Feedback & Contact: feedback.md
   - Model-Based Development:
-      - MBD: Model_Based_Development_QnA/mbd.md
+      - Overview: Model_Based_Development_QnA/mbd.md
       - Simulink: Model_Based_Development_QnA/Simulink_QnA/simulink.md
       - Stateflow: Model_Based_Development_QnA/Stateflow_QnA/stateflow.md
       - TLC: Model_Based_Development_QnA/TLC_QnA/TLC.md
       - MIL: Model_Based_Development_QnA/MIL_QnA/MIL.md
       - SIL: Model_Based_Development_QnA/SIL_QnA/SIL.md
   - Code-Based Development:
-      - CBD: Code_Based_Development_QnA/cbd.md
+      - Overview: Code_Based_Development_QnA/cbd.md
   - AUTOSAR & RTE:
-      - AUTOSAR: AUTOSAR_QnA/autsar.md
+      - Overview: AUTOSAR_QnA/autsar.md
   - Software Quality and Safety Standards/Tools:
+    - Overview: Polyspace_QnA/sqss.md
     - Tools:
       - Polyspace: Polyspace_QnA/polyspace.md
       - SonarQube: Polyspace_QnA/sonarqube.md
@@ -48,7 +49,10 @@ nav:
   - Testing & Safety:
       - Google-Test: coming_soon_Test.md
   - System Design & Integration:
-      - Zonal-Architecture: coming_soon_Sys.md
+    - Overview: System_Design_QnA/system.md
+    - Magic-Draw: System_Design_QnA/magicdraw/magicdraw_qna.md
+    - PREEvision: System_Design_QnA/preevision/preevision_qna.md
+    - Zonal-Architecture: System_Design_QnA/zonal_architecture/zonal_architecture_qna.md
 
 markdown_extensions:
   - toc:
@@ -65,3 +69,6 @@ markdown_extensions:
   - pymdownx.magiclink
   - pymdownx.betterem
 
+extra_css:
+  - stylesheets/extra.css
+  - https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css
