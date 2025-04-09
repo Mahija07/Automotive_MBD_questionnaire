@@ -91,6 +91,9 @@ h1 {
           <li><a href="Model_Based_Development_QnA/mbd/">Overview</a></li>
           <li><a href="Model_Based_Development_QnA/simulink_QnA/simulink/">Simulink</a></li>
           <li><a href="Model_Based_Development_QnA/stateflow_QnA/stateflow/">Stateflow</a></li>
+          <li><a href="Model_Based_Development_QnA/TLC_QnA/TLC/">TLC</a></li>
+          <li><a href="Model_Based_Development_QnA/MIL_QnA/MIL/">MIL</a></li>
+          <li><a href="Model_Based_Development_QnA/SIL_QnA/SIL/">SIL</a></li>
         </ul>
       </div>
     </div>
