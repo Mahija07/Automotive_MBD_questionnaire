@@ -1,4 +1,7 @@
+# 📚 MIL 
+
 ### 🌟 **What is MIL (Model-in-the-Loop)?**
+<a class="back-sidebar-btn" href="javascript:history.back()">⬅️ Back</a>
 
 **Model-in-the-Loop (MIL)** is a simulation-based verification technique used in **Model-Based Development (MBD)**. It validates the functionality of the model **before** generating any code, by running simulations directly on the **Simulink** or **Stateflow** models.
 

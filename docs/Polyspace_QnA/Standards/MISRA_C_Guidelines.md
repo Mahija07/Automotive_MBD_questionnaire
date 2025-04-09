@@ -1,4 +1,7 @@
+# 📚 MISRA C 
+
 ### **MISRA C Guidelines**  
+<a class="back-sidebar-btn" href="javascript:history.back()">⬅️ Back</a>
 
 **MISRA C** stands for the **Motor Industry Software Reliability Association C** guidelines. These are a set of rules and guidelines developed to ensure the reliability, safety, and maintainability of C code, especially in safety-critical systems. It is mainly used in automotive, aerospace, medical, and other embedded industries where software reliability is critical.
 

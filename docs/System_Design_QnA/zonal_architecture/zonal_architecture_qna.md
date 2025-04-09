@@ -1,4 +1,7 @@
+# 📚 ZONAL-ARCHITECTURE 
+
 ### 💡 What is Zonal Architecture?
+<a class="back-sidebar-btn" href="javascript:history.back()">⬅️ Back</a>
 
 Zonal Architecture is a next-gen design approach for vehicle electrical and electronic (E/E) systems. Instead of grouping ECUs by function (like body, chassis, infotainment), it groups them by **physical zones** in the vehicle (e.g., front-left, rear-right). Each zone has its own controller that connects local sensors and actuators to a central computing system.
 

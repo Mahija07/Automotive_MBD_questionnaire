@@ -1,4 +1,7 @@
+# 📚 MAGICDRAW 
+
 ## 🧠 **What is MagicDraw?**
+<a class="back-sidebar-btn" href="javascript:history.back()">⬅️ Back</a>
 
 **MagicDraw** is a powerful **Model-Based Systems Engineering (MBSE)** tool developed by **No Magic**, now part of **Dassault Systèmes' Cameo Systems Modeler suite**.
 

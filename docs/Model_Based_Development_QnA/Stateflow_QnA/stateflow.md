@@ -1,3 +1,5 @@
+# 📚 STATEFLOW 
+
 ## 🌟 **What is Stateflow?**
 
 **Stateflow** is an add-on tool for **Simulink** that allows you to design and simulate **state machines** and **flow charts** for **sequential logic** and **control behavior**.
@@ -248,3 +250,6 @@ They define data objects for interfacing with Simulink, controlling properties l
 
 **50. What is a graphical function in Stateflow?**  
 A graphical function is a reusable block of logic within a chart that can take inputs, perform operations, and return outputs. It's drawn like a flowchart.
+
+<a class="back-sidebar-btn" href="javascript:history.back()">⬅️ Back</a>
+

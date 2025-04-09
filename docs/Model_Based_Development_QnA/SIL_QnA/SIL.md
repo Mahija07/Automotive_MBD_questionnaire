@@ -1,4 +1,7 @@
+# 📚 SIL 
+
 ## 🔹 **What is SIL (Software-in-the-Loop)?**
+<a class="back-sidebar-btn" href="javascript:history.back()">⬅️ Back</a>
 
 **SIL** is a simulation-based testing method where the **auto-generated C code** from your Simulink/Stateflow model is **compiled and executed in a host machine** (usually your PC), **without any hardware involvement**.
 

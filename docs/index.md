@@ -1,3 +1,5 @@
+# 📚 AutoDev Vault 
+
 <!-- index.md - Fully redesigned layout -->
 <style>
   :root {
@@ -182,11 +184,11 @@
       <div class="card-back">
         <h4>Explore Subtopics</h4>
         <ul>
-          <li><a href="AUTOSAR_QnA/autsar/">📚 Overview</a></li>
-          <li><a href="AUTOSAR_QnA/autsar/">📚 SWCs</a></li>
-          <li><a href="AUTOSAR_QnA/autsar/">📚 RTE</a></li>
-          <li><a href="AUTOSAR_QnA/autsar/">📚 ComStack</a></li>
-          <li><a href="AUTOSAR_QnA/autsar/">📚 Interfaces</a></li>
+          <li><a href="AUTOSAR_QnA/Autosar/">📚 Overview</a></li>
+          <li><a href="AUTOSAR_QnA/swc/">📚 SWC's</a></li>
+          <li><a href="AUTOSAR_QnA/rte/">📚 RTE</a></li>
+          <li><a href="AUTOSAR_QnA/comstack/">📚 ComStack</a></li>
+          <li><a href="AUTOSAR_QnA/interfaces/">📚 Interfaces</a></li>
         </ul>
       </div>
     </div>
@@ -197,16 +199,13 @@
     <div class="card-inner">
       <div class="card-front">
         <h2>💻 Code-Based Development</h2>
-        <p>Embedded C | MISRA | Unit Testing | Coding Guidelines</p>
+        <p>Embedded C </p>
       </div>
       <div class="card-back">
         <h4>Explore Subtopics</h4>
         <ul>
           <li><a href="Code_Based_Development_QnA/cbd/">📚 Overview</a></li>
-          <li><a href="Code_Based_Development_QnA/cbd/">📚 Embedded C</a></li>
-          <li><a href="Code_Based_Development_QnA/cbd/">📚 MISRA</a></li>
-          <li><a href="Code_Based_Development_QnA/cbd/">📚 Unit Testing</a></li>
-          <li><a href="Code_Based_Development_QnA/cbd/">📚 Coding Guidelines</a></li>
+          <li><a href="Code_Based_Development_QnA/embeddedc/">📚 Embedded C</a></li>
         </ul>
       </div>
     </div>
@@ -237,17 +236,16 @@
     <div class="card-inner">
       <div class="card-front">
         <h2>🛠️ Tools & Scripting</h2>
-        <p>MATLAB | Python | Git | VSCode | Automation</p>
+        <p>MATLAB | M-Scripting | Git | VSCode </p>
       </div>
       <div class="card-back">
         <h4>Explore Subtopics</h4>
         <ul>
           <li><a href="Tools_Scripting_QnA/tools/">📚 Overview</a></li>
-          <li><a href="coming_soon/">📚 MATLAB</a></li>
-          <li><a href="coming_soon/">📚 Python</a></li>
-          <li><a href="coming_soon/">📚 Git</a></li>
-          <li><a href="coming_soon/">📚 VSCode</a></li>
-          <li><a href="coming_soon/">📚 Automation</a></li>
+          <li><a href="Tools_Scripting_QnA/matlab/">📚 MATLAB</a></li>
+          <li><a href="Tools_Scripting_QnA/mscripting/">📚 M-Scripting</a></li>
+          <li><a href="Tools_Scripting_QnA/git/">📚 Git</a></li>
+          <li><a href="Tools_Scripting_QnA/vscode/">📚 VS Code</a></li>
         </ul>
       </div>
     </div>
@@ -264,10 +262,9 @@
         <h4>Explore Subtopics</h4>
         <ul>
           <li><a href="Testing_Safety_QnA/testing/">📚 Overview</a></li>
-          <li><a href="coming_soon/">📚 GoogleTest</a></li>
-          <li><a href="coming_soon/">📚 ISO 26262</a></li>
-          <li><a href="coming_soon/">📚 JIRA</a></li>
-          <li><a href="coming_soon/">📚 Safety Standards</a></li>
+          <li><a href="Testing_Safety_QnA/gtest/">📚 GoogleTest</a></li>
+          <li><a href="Testing_Safety_QnA/jira/">📚 JIRA</a></li>
+          <li><a href="Testing_Safety_QnA/safety_standards/">📚 Safety Standards</a></li>
         </ul>
       </div>
     </div>

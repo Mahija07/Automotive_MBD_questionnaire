@@ -1,4 +1,7 @@
+# 📚 OVERVIEW 
+
 ### 💻 **What is Software Quality and Safety Standards in Automotive?**
+<a class="back-sidebar-btn" href="javascript:history.back()">⬅️ Back</a>
 
 **Software Quality and Safety Standards** are guidelines and frameworks used to **ensure the software in vehicles is reliable, safe, and performs correctly under all conditions**. Since vehicles now rely heavily on software (ADAS, ECUs, infotainment, etc.), ensuring quality and safety is *non-negotiable*.
 

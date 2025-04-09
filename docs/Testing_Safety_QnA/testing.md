@@ -1,6 +1,6 @@
----
-title: Testing & Safety
----
+# 📚 Testing & Safety
+
+<a class="back-sidebar-btn" href="javascript:history.back()">⬅️ Back</a>
 
 # 🧪 Testing & Functional Safety (ISO 26262)
 

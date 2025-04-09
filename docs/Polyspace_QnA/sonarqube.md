@@ -1,4 +1,7 @@
+# 📚 SONARQUBE 
+
 **What is SonarQube?**
+<a class="back-sidebar-btn" href="javascript:history.back()">⬅️ Back</a>
 
 SonarQube is an open-source platform for continuous inspection of code quality. It provides static analysis to identify bugs, vulnerabilities, and code smells (maintainability issues), and ensures adherence to coding standards and best practices. It supports multiple programming languages such as Java, C/C++, Python, JavaScript, and more.
 

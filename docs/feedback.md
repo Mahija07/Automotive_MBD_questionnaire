@@ -51,8 +51,6 @@
     <br>
     please use the
     <a href="https://github.com/Mahija07/Automotive_MBD_questionnaire/discussions" target="_blank">GitHub Discussions</a>,
-    email me at
-    <a href="mailto:mahijaverma61@gmail.com">mahijaverma61@gmail.com</a>,
     or connect on LinkedIn below:
   </p>
 
@@ -60,3 +58,5 @@
     👉 <a href="https://www.linkedin.com/in/mahija-verma/" target="_blank">Mahija Verma on LinkedIn</a>
   </div>
 </div>
+
+<a class="back-sidebar-btn" href="javascript:history.back()">⬅️ Back</a>

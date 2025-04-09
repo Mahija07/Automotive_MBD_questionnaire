@@ -1,3 +1,5 @@
+# 📚 SIMULINK 
+
 Simulink is a **graphical programming environment** integrated with MATLAB, used primarily for **modeling, simulating, and analyzing dynamic systems**. It’s developed by **MathWorks** and widely used in industries like **automotive, aerospace, robotics, industrial automation**, and even **biomedical engineering**.
 
 ---
@@ -242,3 +244,4 @@ By using protected models, model referencing, and encrypted subsystems.
 
 **50. What is the purpose of dashboards and how are they used for tuning?**  
 Dashboards allow real-time tuning of parameters during simulation and help visualize system behavior dynamically.
+<a class="back-sidebar-btn" href="javascript:history.back()">⬅️ Back</a>

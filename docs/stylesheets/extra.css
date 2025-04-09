@@ -307,3 +307,23 @@ body {
   75% { transform: translateX(10px) rotate(10deg); }
   100% { transform: translateX(0) rotate(0deg); }
 }
+
+.back-sidebar-btn {
+  position: fixed;
+  top: 120px;
+  left: 10px;
+  background-color: #e91e63;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 9999;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease-in-out;
+}
+
+.back-sidebar-btn:hover {
+  transform: scale(1.05);
+}
+
