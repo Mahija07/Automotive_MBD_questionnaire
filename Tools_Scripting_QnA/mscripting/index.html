@@ -1,0 +1,754 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+    
+    
+      
+        <title>📚 M SCRIPTING - 🚗 AutoDev Vault by Mahija</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="yellow">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#m-scripting" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="🚗 AutoDev Vault by Mahija" class="md-header__button md-logo" aria-label="🚗 AutoDev Vault by Mahija" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            🚗 AutoDev Vault by Mahija
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              📚 M SCRIPTING
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="🚗 AutoDev Vault by Mahija" class="md-nav__button md-logo" aria-label="🚗 AutoDev Vault by Mahija" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    🚗 AutoDev Vault by Mahija
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-m-scripting-matlab-scripting" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 What is M-Scripting (MATLAB Scripting)?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-is-it-used" class="md-nav__link">
+    <span class="md-ellipsis">
+      📍 Where is it used?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-do-we-use-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      📅 When do we use it?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-use-m-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❓ Why use M-scripts?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-we-use-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ How do we use it?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌟 Benefits
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-matlab-scripting-commands-their-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 Basic MATLAB Scripting Commands &amp; Their Use
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#matlab-m-scripting-interview-qa" class="md-nav__link">
+    <span class="md-ellipsis">
+      **MATLAB M-Scripting Interview Q&amp;A **
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="m-scripting">📚 M SCRIPTING</h1>
+<h3 id="what-is-m-scripting-matlab-scripting">💡 <strong>What is M-Scripting (MATLAB Scripting)?</strong></h3>
+<p><a class="back-sidebar-btn" href="javascript:history.back()">⬅️ Back</a></p>
+<p>M-scripting refers to writing code in <strong>MATLAB using <code>.m</code> files</strong>, which include scripts and functions. It allows for:
+- Data processing
+- Algorithm development
+- Simulation automation
+- Plotting &amp; visualization
+- Model control (e.g., running Simulink models via script)</p>
+<hr />
+<h3 id="where-is-it-used">📍 <strong>Where is it used?</strong></h3>
+<ul>
+<li>Controlling <strong>Simulink</strong> model simulations</li>
+<li>Automating <strong>test cases</strong> (MIL/SIL)</li>
+<li>Post-processing results (e.g., signal logs, plots)</li>
+<li>Writing reusable utility functions</li>
+<li>Performing <strong>batch regression tests</strong></li>
+<li>Creating <strong>configuration scripts</strong> for automotive domains</li>
+</ul>
+<hr />
+<h3 id="when-do-we-use-it">📅 <strong>When do we use it?</strong></h3>
+<ul>
+<li>During <strong>model development</strong></li>
+<li>For <strong>automated testing pipelines</strong></li>
+<li>To <strong>generate and document results</strong></li>
+<li>When building toolchains for <strong>code generation, verification</strong></li>
+</ul>
+<hr />
+<h3 id="why-use-m-scripts">❓ <strong>Why use M-scripts?</strong></h3>
+<ul>
+<li><strong>Automation:</strong> Run tasks, load data, execute models without GUI</li>
+<li><strong>Customization:</strong> Build test frameworks and utilities</li>
+<li><strong>Reusability:</strong> Define functions for common engineering operations</li>
+<li><strong>Efficiency:</strong> Avoid repetitive manual actions</li>
+</ul>
+<hr />
+<h3 id="how-do-we-use-it">⚙️ <strong>How do we use it?</strong></h3>
+<ul>
+<li>Create <code>.m</code> files with code and logic</li>
+<li>Use control structures (<code>if</code>, <code>for</code>, <code>while</code>)</li>
+<li>Interface with Simulink models using <code>set_param</code>, <code>sim</code>, <code>get_param</code></li>
+<li>Perform data handling using tables, matrices, cell arrays, structs</li>
+<li>Integrate with toolboxes or use for test automation</li>
+</ul>
+<hr />
+<h3 id="benefits">🌟 <strong>Benefits</strong></h3>
+<p>✅ Simplifies repetitive tasks<br />
+✅ Helps in building test frameworks<br />
+✅ Makes simulation runs reproducible<br />
+✅ Enables clean and structured development<br />
+✅ Easy to integrate with CI/CD and test tools like Jenkins or JIRA<br />
+✅ Great for logging, visualization, post-analysis  </p>
+<hr />
+<h3 id="basic-matlab-scripting-commands-their-use">🧩 <strong>Basic MATLAB Scripting Commands &amp; Their Use</strong></h3>
+<table>
+<thead>
+<tr>
+<th><strong>Command</strong></th>
+<th><strong>Use</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>clc</code></td>
+<td>Clears the Command Window</td>
+</tr>
+<tr>
+<td><code>clear</code></td>
+<td>Removes variables from workspace</td>
+</tr>
+<tr>
+<td><code>close all</code></td>
+<td>Closes all open figure windows</td>
+</tr>
+<tr>
+<td><code>disp(x)</code></td>
+<td>Displays value of <code>x</code></td>
+</tr>
+<tr>
+<td><code>fprintf()</code></td>
+<td>Prints formatted data to screen or file</td>
+</tr>
+<tr>
+<td><code>load('file.mat')</code></td>
+<td>Loads variables from a <code>.mat</code> file</td>
+</tr>
+<tr>
+<td><code>save('file.mat')</code></td>
+<td>Saves variables to a <code>.mat</code> file</td>
+</tr>
+<tr>
+<td><code>plot(x, y)</code></td>
+<td>Plots x vs y</td>
+</tr>
+<tr>
+<td><code>title('text')</code></td>
+<td>Adds title to plot</td>
+</tr>
+<tr>
+<td><code>xlabel('x')</code>, <code>ylabel('y')</code></td>
+<td>Labels x and y axes</td>
+</tr>
+<tr>
+<td><code>legend()</code></td>
+<td>Adds legend to plot</td>
+</tr>
+<tr>
+<td><code>hold on</code></td>
+<td>Allows multiple plots on same axes</td>
+</tr>
+<tr>
+<td><code>axis([xmin xmax ymin ymax])</code></td>
+<td>Sets axis limits</td>
+</tr>
+<tr>
+<td><code>if</code>, <code>else</code>, <code>elseif</code>, <code>end</code></td>
+<td>Conditional statements</td>
+</tr>
+<tr>
+<td><code>for i = 1:N</code></td>
+<td>Looping from 1 to N</td>
+</tr>
+<tr>
+<td><code>while condition</code></td>
+<td>Loop while condition is true</td>
+</tr>
+<tr>
+<td><code>break</code></td>
+<td>Exit loop early</td>
+</tr>
+<tr>
+<td><code>continue</code></td>
+<td>Skip current iteration</td>
+</tr>
+<tr>
+<td><code>function out = name(in)</code></td>
+<td>Function definition</td>
+</tr>
+<tr>
+<td><code>sim('modelName')</code></td>
+<td>Runs a Simulink model</td>
+</tr>
+<tr>
+<td><code>set_param()</code></td>
+<td>Set block/model parameter</td>
+</tr>
+<tr>
+<td><code>get_param()</code></td>
+<td>Get block/model parameter</td>
+</tr>
+<tr>
+<td><code>exist('var', 'var')</code></td>
+<td>Check if variable exists</td>
+</tr>
+<tr>
+<td><code>isnan(x)</code></td>
+<td>Check if value is NaN</td>
+</tr>
+<tr>
+<td><code>size(x)</code></td>
+<td>Returns dimensions of array <code>x</code></td>
+</tr>
+<tr>
+<td><code>length(x)</code></td>
+<td>Returns largest dimension of <code>x</code></td>
+</tr>
+<tr>
+<td><code>zeros(n,m)</code>, <code>ones(n,m)</code></td>
+<td>Create n-by-m array of 0s or 1s</td>
+</tr>
+<tr>
+<td><code>rand(n)</code></td>
+<td>Generate n-by-n random matrix</td>
+</tr>
+<tr>
+<td><code>linspace(a,b,n)</code></td>
+<td>Generate <code>n</code> points between <code>a</code> and <code>b</code></td>
+</tr>
+<tr>
+<td><code>mean(x)</code></td>
+<td>Compute mean of x</td>
+</tr>
+<tr>
+<td><code>std(x)</code></td>
+<td>Compute standard deviation</td>
+</tr>
+<tr>
+<td><code>max(x)</code>, <code>min(x)</code></td>
+<td>Find max/min values</td>
+</tr>
+<tr>
+<td><code>sum(x)</code>, <code>prod(x)</code></td>
+<td>Sum/product of array elements</td>
+</tr>
+<tr>
+<td><code>input('msg')</code></td>
+<td>Get input from user</td>
+</tr>
+<tr>
+<td><code>pause(n)</code></td>
+<td>Pause execution for n seconds</td>
+</tr>
+<tr>
+<td><code>try...catch</code></td>
+<td>Error handling block</td>
+</tr>
+<tr>
+<td><code>gca</code>, <code>gcf</code></td>
+<td>Current axes, current figure handles</td>
+</tr>
+<tr>
+<td><code>eval('code')</code></td>
+<td>Execute string as MATLAB code</td>
+</tr>
+<tr>
+<td><code>cd</code>, <code>pwd</code>, <code>ls</code></td>
+<td>Directory navigation</td>
+</tr>
+<tr>
+<td><code>who</code>, <code>whos</code></td>
+<td>List variables in workspace</td>
+</tr>
+</tbody>
+</table>
+<h3 id="matlab-m-scripting-interview-qa">**MATLAB M-Scripting Interview Q&amp;A **</h3>
+<hr />
+<p><strong>1. What is an M-script in MATLAB?</strong><br />
+A script written in a <code>.m</code> file that contains a sequence of MATLAB commands.</p>
+<p><strong>2. How is an M-script different from a function?</strong><br />
+Scripts don’t take inputs or return outputs; functions do.</p>
+<p><strong>3. How do you create an M-script?</strong><br />
+Create a new <code>.m</code> file and save it with your code.</p>
+<p><strong>4. What command is used to run an M-script?</strong><br />
+Just type the file name (without <code>.m</code>) in the command window.</p>
+<p><strong>5. What is the command to run a Simulink model from a script?</strong><br />
+<code>sim('modelName')</code></p>
+<p><strong>6. How do you automate test cases using scripts?</strong><br />
+By looping through test inputs and calling Simulink models with <code>sim()</code>.</p>
+<p><strong>7. What function is used to set parameters in a Simulink model?</strong><br />
+<code>set_param()</code></p>
+<p><strong>8. What is <code>get_param()</code> used for?</strong><br />
+To retrieve model, block, or signal parameters.</p>
+<p><strong>9. How do you store simulation output in a script?</strong><br />
+By capturing the output of <code>sim()</code> like:  </p>
+<pre><code class="language-matlab">out = sim('modelName');
+</code></pre>
+<p><strong>10. What function is used to create plots?</strong><br />
+<code>plot(x, y)</code></p>
+<p><strong>11. How can you use conditions in scripts?</strong><br />
+Using <code>if</code>, <code>elseif</code>, and <code>else</code>.</p>
+<p><strong>12. How do you loop in MATLAB?</strong><br />
+Using <code>for</code> and <code>while</code> loops.</p>
+<p><strong>13. How do you suppress output in MATLAB?</strong><br />
+Add a semicolon <code>;</code> at the end of the statement.</p>
+<p><strong>14. What is the use of <code>disp()</code>?</strong><br />
+To display text or variable values.</p>
+<p><strong>15. How can you create a function inside an M-script?</strong><br />
+Add a <code>function</code> block at the end of the script (in recent MATLAB versions).</p>
+<p><strong>16. How do you handle errors in scripts?</strong><br />
+Use <code>try</code> and <code>catch</code> blocks.</p>
+<p><strong>17. What is the use of <code>exist()</code>?</strong><br />
+To check if a variable or file exists.</p>
+<p><strong>18. How do you load <code>.mat</code> files in scripts?</strong><br />
+Using <code>load('filename.mat')</code>.</p>
+<p><strong>19. What does <code>clear</code> do?</strong><br />
+Clears variables from the workspace.</p>
+<p><strong>20. What does <code>clc</code> do?</strong><br />
+Clears the command window.</p>
+<p><strong>21. How to save simulation outputs from scripts?</strong><br />
+Use <code>save('filename.mat', 'variableName')</code></p>
+<p><strong>22. How do you write data to a text file?</strong><br />
+Using <code>fopen</code>, <code>fprintf</code>, and <code>fclose</code>.</p>
+<p><strong>23. What is the <code>fprintf</code> function for?</strong><br />
+Formatted data printing to the screen or file.</p>
+<p><strong>24. How do you generate test input signals in a script?</strong><br />
+Use functions like <code>sin</code>, <code>linspace</code>, <code>rand</code>, or custom arrays.</p>
+<p><strong>25. What are common uses of M-scripts in automotive?</strong><br />
+MIL testing, batch simulations, test automation, plotting results.</p>
+<p><strong>26. What does <code>pause</code> do?</strong><br />
+Temporarily stops script execution.</p>
+<p><strong>27. How do you call a function from a script?</strong><br />
+Just type the function name and pass inputs.</p>
+<p><strong>28. How do you debug an M-script?</strong><br />
+Use breakpoints and the <code>dbstop</code>, <code>dbstep</code>, <code>dbclear</code> commands.</p>
+<p><strong>29. How do you use global variables in scripts?</strong><br />
+Use the <code>global</code> keyword.</p>
+<p><strong>30. What is the difference between <code>length()</code> and <code>size()</code>?</strong><br />
+<code>length()</code> returns the largest dimension, <code>size()</code> returns both.</p>
+<p><strong>31. How do you vectorize operations in MATLAB?</strong><br />
+Use array/matrix operations instead of loops.</p>
+<p><strong>32. How do you check for NaN in a script?</strong><br />
+Use <code>isnan()</code>.</p>
+<p><strong>33. How do you define a cell array?</strong><br />
+<code>C = {1, 'text', [1 2 3]};</code></p>
+<p><strong>34. What is the benefit of scripting for testing?</strong><br />
+Automates tests, repeatability, saves time, traceability.</p>
+<p><strong>35. How do you execute a script from another script?</strong><br />
+Just call the filename without <code>.m</code>.</p>
+<p><strong>36. How do you generate plots for multiple datasets?</strong><br />
+Use <code>hold on</code> and multiple <code>plot()</code> calls.</p>
+<p><strong>37. How do you add titles and labels to plots?</strong><br />
+Use <code>title()</code>, <code>xlabel()</code>, <code>ylabel()</code>.</p>
+<p><strong>38. What does <code>gca</code> and <code>gcf</code> stand for?</strong><br />
+Current axes and current figure handles.</p>
+<p><strong>39. How do you loop through signal names in a list?</strong><br />
+Use a <code>for</code> loop with cell arrays.</p>
+<p><strong>40. How do you compare expected vs actual values?</strong><br />
+Use <code>assert()</code> or difference-based checks with tolerance.</p>
+<p><strong>41. What’s the role of <code>simOut.logsout</code>?</strong><br />
+Access logged signals from Simulink.</p>
+<p><strong>42. How do you log signals in a script?</strong><br />
+Enable logging in Simulink, access via <code>simOut</code>.</p>
+<p><strong>43. Can you run a script from a button in Simulink?</strong><br />
+Yes, using a callback that triggers <code>evalin('base', 'scriptName')</code>.</p>
+<p><strong>44. What is <code>eval()</code> used for?</strong><br />
+Executes a string as a MATLAB command.</p>
+<p><strong>45. What is the use of <code>input()</code> in scripts?</strong><br />
+Takes user input during script execution.</p>
+<p><strong>46. What is <code>switch-case</code> used for?</strong><br />
+Alternative to <code>if-else</code> for handling multiple conditions.</p>
+<p><strong>47. What does <code>who</code> and <code>whos</code> show?</strong><br />
+Lists all variables and their details.</p>
+<p><strong>48. How do you define an inline anonymous function?</strong>  </p>
+<pre><code class="language-matlab">f = @(x) x^2;
+</code></pre>
+<p><strong>49. What is <code>cellfun</code> or <code>arrayfun</code> used for?</strong><br />
+Apply a function to each cell/array element.</p>
+<p><strong>50. Why is M-scripting important in automotive MBD?</strong><br />
+Helps automate modeling, testing, simulation, data processing, and reporting — making engineering efficient and traceable.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.top", "navigation.tabs"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></script>
+      
+    
+  </body>
+</html>

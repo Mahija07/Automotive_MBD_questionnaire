@@ -1,0 +1,578 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+    
+    
+      
+        <title>📚 EMBEDDED C - 🚗 AutoDev Vault by Mahija</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="yellow">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#embedded-c" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="🚗 AutoDev Vault by Mahija" class="md-header__button md-logo" aria-label="🚗 AutoDev Vault by Mahija" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            🚗 AutoDev Vault by Mahija
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              📚 EMBEDDED C
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="🚗 AutoDev Vault by Mahija" class="md-nav__button md-logo" aria-label="🚗 AutoDev Vault by Mahija" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    🚗 AutoDev Vault by Mahija
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-embedded-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 What is Embedded C?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-is-embedded-c-used" class="md-nav__link">
+    <span class="md-ellipsis">
+      📅 When is Embedded C Used?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-is-embedded-c-used" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌍 Where is Embedded C Used?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-use-embedded-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❓ Why Use Embedded C?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-we-use-embedded-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ How Do We Use Embedded C?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#benefits-of-embedded-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌟 Benefits of Embedded C
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#embedded-c-interview-questions-answers" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Embedded C – Interview Questions &amp; Answers
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="embedded-c">📚 EMBEDDED C</h1>
+<p><a class="back-sidebar-btn" href="javascript:history.back()">⬅️ Back</a></p>
+<h3 id="what-is-embedded-c">🧠 <strong>What is Embedded C?</strong></h3>
+<p><strong>Embedded C</strong> is an extension of the C programming language tailored for <strong>embedded systems development</strong> — systems with limited hardware (memory, CPU) and tight real-time constraints. It's used to program microcontrollers like <strong>8051, ARM, PIC, AVR</strong>, etc.</p>
+<hr />
+<h3 id="when-is-embedded-c-used">📅 <strong>When is Embedded C Used?</strong></h3>
+<ul>
+<li>When you're writing software for <strong>microcontrollers or embedded devices</strong>.</li>
+<li>During <strong>firmware development</strong> for products like automotive ECUs, IoT devices, washing machines, medical devices, etc.</li>
+<li>Anytime <strong>performance, memory usage, and timing</strong> are critical.</li>
+</ul>
+<hr />
+<h3 id="where-is-embedded-c-used">🌍 <strong>Where is Embedded C Used?</strong></h3>
+<ul>
+<li>Automotive ECUs (Engine Control Units, Body Control Modules)</li>
+<li>Consumer electronics (TVs, Washing Machines, Microwaves)</li>
+<li>Industrial automation</li>
+<li>Healthcare devices</li>
+<li>Aerospace control systems</li>
+<li>Robotics and IoT systems</li>
+</ul>
+<hr />
+<h3 id="why-use-embedded-c">❓ <strong>Why Use Embedded C?</strong></h3>
+<ul>
+<li>It's <strong>close to hardware</strong>, allowing precise control of registers, ports, timers, etc.</li>
+<li><strong>Portable</strong> across different microcontrollers (with proper abstraction).</li>
+<li>Efficient for <strong>real-time applications</strong> where timing and performance matter.</li>
+<li>Supported by almost all <strong>embedded toolchains and compilers</strong> (e.g., Keil, IAR, MPLAB, STM32CubeIDE).</li>
+</ul>
+<hr />
+<h3 id="how-do-we-use-embedded-c">⚙️ <strong>How Do We Use Embedded C?</strong></h3>
+<ul>
+<li>Write your C code using microcontroller-specific <strong>register definitions</strong>, <strong>memory-mapped I/O</strong>, and <strong>ISR functions</strong>.</li>
+<li>Use <strong>predefined headers and drivers</strong> provided by microcontroller vendors.</li>
+<li>Build and compile the code using a suitable IDE or toolchain.</li>
+<li>Flash the binary to the target microcontroller.</li>
+</ul>
+<p>Example (for an 8051):</p>
+<pre><code class="language-c">#include &lt;reg51.h&gt;
+
+void main() {
+  while(1) {
+    P1 = 0xFF;  // Set all pins on port 1
+  }
+}
+</code></pre>
+<hr />
+<h3 id="benefits-of-embedded-c">🌟 <strong>Benefits of Embedded C</strong></h3>
+<ul>
+<li>🔹 Efficient execution in resource-constrained environments</li>
+<li>🔹 Precise control of hardware</li>
+<li>🔹 Portable with minimal changes</li>
+<li>🔹 Easy to maintain and modular</li>
+<li>🔹 Structured programming for better development practices</li>
+<li>🔹 Strong community support and vast legacy code</li>
+</ul>
+<hr />
+<p>Here you go babe! 💖<br />
+<strong>1–50 Interview Questions and Answers for Embedded C</strong> in a clean and plain text format:</p>
+<hr />
+<h3 id="embedded-c-interview-questions-answers">🔧 Embedded C – Interview Questions &amp; Answers</h3>
+<p><strong>1. What is Embedded C?</strong><br />
+Embedded C is a set of language extensions for the C Programming Language to support embedded processors and microcontrollers.</p>
+<p><strong>2. How is Embedded C different from C?</strong><br />
+Embedded C includes direct access to hardware through memory-mapped I/O and register manipulation, unlike standard C.</p>
+<p><strong>3. What are the key features of Embedded C?</strong><br />
+Portability, efficiency, low-level access, hardware interfacing, and deterministic execution.</p>
+<p><strong>4. What are microcontrollers?</strong><br />
+Microcontrollers are small computing systems on a chip that control embedded devices.</p>
+<p><strong>5. What is the use of <code>volatile</code> keyword?</strong><br />
+It tells the compiler that a variable can change at any time, preventing optimization that could ignore changes.</p>
+<p><strong>6. What is an ISR?</strong><br />
+Interrupt Service Routine – a function triggered when a hardware interrupt occurs.</p>
+<p><strong>7. How do you declare an ISR in Embedded C?</strong><br />
+Using compiler-specific syntax. For 8051: <code>void isr() interrupt 1</code>.</p>
+<p><strong>8. What is the role of registers?</strong><br />
+Registers are memory locations inside the microcontroller used for data storage and control.</p>
+<p><strong>9. What are the data types commonly used?</strong><br />
+<code>int</code>, <code>char</code>, <code>unsigned</code>, <code>float</code>, <code>uint8_t</code>, <code>uint16_t</code>, etc.</p>
+<p><strong>10. What is memory-mapped I/O?</strong><br />
+Peripheral devices are assigned specific memory addresses that can be accessed like regular variables.</p>
+<p><strong>11. How do you turn on an LED in Embedded C?</strong>  </p>
+<pre><code class="language-c">P1 = 0x01; // Turns on LED connected to P1.0
+</code></pre>
+<p><strong>12. What is bit manipulation?</strong><br />
+Directly modifying bits for controlling specific hardware features.</p>
+<p><strong>13. Explain <code>sbit</code> keyword.</strong><br />
+Used to access individual bits of a special function register.</p>
+<p><strong>14. What is a watchdog timer?</strong><br />
+A hardware timer that resets the system if the software becomes unresponsive.</p>
+<p><strong>15. What is polling?</strong><br />
+Continuously checking the status of a peripheral or flag.</p>
+<p><strong>16. What is debouncing?</strong><br />
+Filtering the noise when reading mechanical switch input.</p>
+<p><strong>17. What is the stack used for?</strong><br />
+Storing return addresses, local variables, and function parameters.</p>
+<p><strong>18. What is the heap used for?</strong><br />
+Dynamic memory allocation (though it's avoided in embedded systems).</p>
+<p><strong>19. What are the memory sections?</strong><br />
+Code, data, bss, stack, and heap.</p>
+<p><strong>20. What is the difference between <code>const</code> and <code>#define</code>?</strong><br />
+<code>const</code> defines typed variables, <code>#define</code> is preprocessor macro substitution.</p>
+<p><strong>21. What is a real-time system?</strong><br />
+A system where response time is critical, and tasks must execute within deadlines.</p>
+<p><strong>22. What is a timer in embedded systems?</strong><br />
+A counter used for time tracking or generating delays.</p>
+<p><strong>23. How to generate delay in Embedded C?</strong><br />
+Using timers or loops, e.g. <code>for(i=0;i&lt;50000;i++);</code>.</p>
+<p><strong>24. What is the difference between a microprocessor and microcontroller?</strong><br />
+Microcontroller has CPU, memory, and I/O on one chip; microprocessor only has CPU.</p>
+<p><strong>25. What is I2C?</strong><br />
+A serial protocol for multi-device communication using 2 wires.</p>
+<p><strong>26. What is SPI?</strong><br />
+Serial Peripheral Interface, a fast communication protocol using 4 wires.</p>
+<p><strong>27. What is UART?</strong><br />
+Universal Asynchronous Receiver/Transmitter – used for serial communication.</p>
+<p><strong>28. What is GPIO?</strong><br />
+General-Purpose Input/Output – pins used to control or read digital signals.</p>
+<p><strong>29. What is the purpose of <code>static</code> keyword?</strong><br />
+Restricts variable scope to file or function.</p>
+<p><strong>30. What is inline assembly in Embedded C?</strong><br />
+Embedding assembly code in C for performance-critical tasks.</p>
+<p><strong>31. What is <code>typedef</code>?</strong><br />
+Used to define new names for data types.</p>
+<p><strong>32. What is the purpose of <code>extern</code>?</strong><br />
+Declares a variable defined elsewhere in another file.</p>
+<p><strong>33. How do interrupts work in Embedded C?</strong><br />
+Triggered by hardware, ISR is called to handle the event.</p>
+<p><strong>34. What is the difference between <code>=</code>, <code>==</code>, and <code>===</code> in Embedded C?</strong><br />
+<code>=</code> assigns, <code>==</code> compares; <code>===</code> doesn’t exist in C.</p>
+<p><strong>35. What is firmware?</strong><br />
+Software programmed into non-volatile memory of embedded systems.</p>
+<p><strong>36. What are linker scripts?</strong><br />
+Used to define memory layout and placement of code/data.</p>
+<p><strong>37. How to optimize embedded code?</strong><br />
+Avoid floating-point, reduce recursion, minimize memory, use efficient algorithms.</p>
+<p><strong>38. What is the difference between <code>call</code> and <code>goto</code>?</strong><br />
+<code>call</code> invokes a function with return, <code>goto</code> jumps unconditionally.</p>
+<p><strong>39. What is bootloader?</strong><br />
+A small program that loads main firmware into memory during startup.</p>
+<p><strong>40. What is RTOS?</strong><br />
+Real-Time Operating System used in complex embedded systems.</p>
+<p><strong>41. What is context switching?</strong><br />
+Changing the CPU from one task/process to another.</p>
+<p><strong>42. What is DMA?</strong><br />
+Direct Memory Access allows peripherals to transfer data without CPU.</p>
+<p><strong>43. What are software debuggers?</strong><br />
+Tools to trace, inspect, and control code execution (e.g., Keil, MPLAB).</p>
+<p><strong>44. What are common IDEs for Embedded C?</strong><br />
+Keil uVision, MPLAB X, STM32CubeIDE, Code Composer Studio.</p>
+<p><strong>45. What is code profiling?</strong><br />
+Analyzing code performance and identifying bottlenecks.</p>
+<p><strong>46. What are volatile vs const volatile?</strong><br />
+<code>volatile</code>: variable may change unexpectedly; <code>const volatile</code>: can change, but not modified in code.</p>
+<p><strong>47. What is memory leak in embedded systems?</strong><br />
+Failure to free unused memory — dangerous due to limited resources.</p>
+<p><strong>48. What is the role of linker and compiler?</strong><br />
+Compiler converts code to object file; linker combines into a final executable.</p>
+<p><strong>49. What is endianess?</strong><br />
+Byte order — Little Endian (LSB first) or Big Endian (MSB first).</p>
+<p><strong>50. How to ensure safety in embedded development?</strong><br />
+Follow MISRA C, use static analysis, test rigorously, use watchdogs.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.top", "navigation.tabs"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></script>
+      
+    
+  </body>
+</html>

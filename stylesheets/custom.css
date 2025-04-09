@@ -1,0 +1,48 @@
+.card p a.sub-link {
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.card p a.sub-link:hover {
+  color: #ff79c6; /* pinkish hover */
+}
+
+.card p {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.md-main__inner {
+  max-width: 100% !important;
+}
+
+.md-content {
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+a:focus {
+  outline: none;
+}
+
+.card:focus,
+.card *:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.card img:focus,
+.card svg:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.card a:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  
+.card a:hover {
+    text-decoration: none;
+  }  
