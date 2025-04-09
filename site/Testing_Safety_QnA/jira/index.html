@@ -1,0 +1,567 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+    
+    
+      
+        <title>📚 JIRA - 🚗 AutoDev Vault by Mahija</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="yellow">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#jira" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="🚗 AutoDev Vault by Mahija" class="md-header__button md-logo" aria-label="🚗 AutoDev Vault by Mahija" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            🚗 AutoDev Vault by Mahija
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              📚 JIRA
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="🚗 AutoDev Vault by Mahija" class="md-nav__button md-logo" aria-label="🚗 AutoDev Vault by Mahija" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    🚗 AutoDev Vault by Mahija
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-jira" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ What is JIRA?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-do-we-use-jira" class="md-nav__link">
+    <span class="md-ellipsis">
+      📅 When do we use JIRA?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-is-jira-used" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌍 Where is JIRA used?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-do-we-use-jira" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❓ Why do we use JIRA?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-we-use-jira" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ How do we use JIRA?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#benefits-of-jira" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌟 Benefits of JIRA
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jira-interview-questions-and-answers" class="md-nav__link">
+    <span class="md-ellipsis">
+      JIRA Interview Questions and Answers
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="jira">📚 JIRA</h1>
+<h3 id="what-is-jira">✅ <strong>What is JIRA?</strong></h3>
+<p><a class="back-sidebar-btn" href="javascript:history.back()">⬅️ Back</a></p>
+<p><strong>JIRA</strong> is a project management and issue tracking tool developed by Atlassian. It is widely used to <strong>track bugs, plan sprints, manage tasks</strong>, and visualize progress, especially in <strong>Agile/Scrum-based software development</strong> environments.</p>
+<hr />
+<h3 id="when-do-we-use-jira">📅 <strong>When do we use JIRA?</strong></h3>
+<p>We use JIRA:
+- During all phases of a <strong>software development lifecycle (SDLC)</strong><br />
+- To manage <strong>Agile sprints</strong>, backlogs, and user stories<br />
+- When <strong>reporting, tracking, and resolving bugs or feature requests</strong><br />
+- In <strong>automotive software projects</strong> to organize development cycles for ECUs, features like lighting, diagnostics, etc.</p>
+<hr />
+<h3 id="where-is-jira-used">🌍 <strong>Where is JIRA used?</strong></h3>
+<ul>
+<li>In <strong>software teams</strong> (frontend, backend, embedded, MBD)  </li>
+<li>Across <strong>automotive OEMs, Tier-1 suppliers</strong>, and <strong>IT teams</strong></li>
+<li>In <strong>team collaborations</strong> for feature tracking, documentation, and sprint planning  </li>
+<li>In combination with tools like <strong>Bitbucket, Confluence, Jenkins, GTest, Git, SVN</strong></li>
+</ul>
+<hr />
+<h3 id="why-do-we-use-jira">❓ <strong>Why do we use JIRA?</strong></h3>
+<ul>
+<li>To ensure <strong>clear visibility</strong> of project progress  </li>
+<li>To <strong>prioritize tasks and bugs</strong> based on severity and deadlines  </li>
+<li>For effective <strong>sprint planning and velocity tracking</strong>  </li>
+<li>To maintain <strong>traceability of requirements, tasks, and test coverage</strong></li>
+<li>To <strong>collaborate</strong> easily between developers, testers, managers, and stakeholders</li>
+</ul>
+<hr />
+<h3 id="how-do-we-use-jira">⚙️ <strong>How do we use JIRA?</strong></h3>
+<ul>
+<li>Create <strong>projects</strong> and define workflows  </li>
+<li>Break down work into <strong>epics → stories → tasks → sub-tasks</strong>  </li>
+<li>Link issues to commits, pull requests, or test cases  </li>
+<li>Use <strong>Kanban/Scrum boards</strong> to track progress  </li>
+<li>Assign issues to team members and add <strong>labels, priorities, components</strong></li>
+<li>Add <strong>attachments, comments, and due dates</strong> for collaboration</li>
+</ul>
+<hr />
+<h3 id="benefits-of-jira">🌟 <strong>Benefits of JIRA</strong></h3>
+<ul>
+<li>✅ Centralized task and issue tracking  </li>
+<li>✅ Supports <strong>Agile &amp; DevOps methodologies</strong>  </li>
+<li>✅ Highly customizable workflows and dashboards  </li>
+<li>✅ Seamless integrations with Git, Jenkins, Confluence, etc.  </li>
+<li>✅ Real-time collaboration and progress updates  </li>
+<li>✅ Improves <strong>transparency, traceability, and accountability</strong></li>
+</ul>
+<hr />
+<h3 id="jira-interview-questions-and-answers"><strong>JIRA Interview Questions and Answers</strong></h3>
+<hr />
+<p><strong>1. What is JIRA?</strong><br />
+JIRA is a tool used for bug tracking, issue tracking, and project management developed by Atlassian.</p>
+<p><strong>2. Why do teams use JIRA?</strong><br />
+To plan, track, release, and report tasks in an organized and collaborative manner.</p>
+<p><strong>3. What is an issue in JIRA?</strong><br />
+An issue represents a task, bug, story, or request that needs tracking.</p>
+<p><strong>4. What is a project in JIRA?</strong><br />
+A project is a collection of issues that are worked on by a team.</p>
+<p><strong>5. What are the types of issues in JIRA?</strong><br />
+Bug, Task, Sub-task, Story, Epic, Improvement.</p>
+<p><strong>6. What is an epic?</strong><br />
+An epic is a large body of work that can be broken down into smaller tasks or stories.</p>
+<p><strong>7. What is a sprint?</strong><br />
+A sprint is a fixed time period in Scrum during which specific tasks are completed.</p>
+<p><strong>8. What is a backlog?</strong><br />
+It’s a list of prioritized issues, including stories, bugs, or tasks, yet to be completed.</p>
+<p><strong>9. What is a JIRA workflow?</strong><br />
+It’s a set of statuses and transitions that define the lifecycle of an issue.</p>
+<p><strong>10. What are statuses in a workflow?</strong><br />
+They indicate the current state of an issue (e.g., To Do, In Progress, Done).</p>
+<p><strong>11. What is a transition in JIRA?</strong><br />
+A transition is the movement of an issue from one status to another.</p>
+<p><strong>12. What is a resolution?</strong><br />
+It represents the final state of an issue (e.g., Fixed, Won’t Fix, Duplicate).</p>
+<p><strong>13. Can we customize workflows in JIRA?</strong><br />
+Yes, admins can define custom workflows, statuses, and transitions.</p>
+<p><strong>14. What is a component in JIRA?</strong><br />
+A component is a sub-section of a project, used to group issues logically.</p>
+<p><strong>15. What is a label?</strong><br />
+A tag added to issues for easier searching and filtering.</p>
+<p><strong>16. What is a board in JIRA?</strong><br />
+A board shows issues from one or more projects, visualized in columns.</p>
+<p><strong>17. What is the difference between a Kanban and Scrum board?</strong><br />
+Kanban is flow-based; Scrum is time-boxed with sprints.</p>
+<p><strong>18. What is an assignee?</strong><br />
+The person responsible for working on an issue.</p>
+<p><strong>19. What is a watcher in JIRA?</strong><br />
+Someone who receives notifications about issue updates.</p>
+<p><strong>20. How is JIRA used in automotive development?</strong><br />
+To track tasks related to ECUs, diagnostics, validation, lighting modules, and software bugs.</p>
+<p><strong>21. What is a version/release in JIRA?</strong><br />
+Used to mark when features or bug fixes are released to users.</p>
+<p><strong>22. What is a story in JIRA?</strong><br />
+A requirement or functionality from the user’s perspective.</p>
+<p><strong>23. What is a sub-task?</strong><br />
+A smaller unit of work that helps complete a story or task.</p>
+<p><strong>24. How can you link issues in JIRA?</strong><br />
+Using “linked issues” like blocks, duplicates, relates to, etc.</p>
+<p><strong>25. How does JIRA support Agile methodology?</strong><br />
+Through backlogs, sprints, boards, and velocity tracking.</p>
+<p><strong>26. How do you track progress in JIRA?</strong><br />
+Using dashboards, burndown charts, and boards.</p>
+<p><strong>27. What are filters in JIRA?</strong><br />
+Custom queries (JQL) to find specific issues.</p>
+<p><strong>28. What is JQL?</strong><br />
+JIRA Query Language – used to create powerful filters.</p>
+<p><strong>29. Can JIRA be integrated with other tools?</strong><br />
+Yes, with Git, Jenkins, Bitbucket, Confluence, etc.</p>
+<p><strong>30. What is a dashboard?</strong><br />
+A customizable visual panel that shows charts, stats, and filters.</p>
+<p><strong>31. How do you prioritize tasks in JIRA?</strong><br />
+Using priority fields like Highest, High, Medium, Low.</p>
+<p><strong>32. How do you create a new issue in JIRA?</strong><br />
+Click “Create” and fill in project, type, summary, and other details.</p>
+<p><strong>33. What is a workflow scheme?</strong><br />
+It defines which workflows apply to which issue types in a project.</p>
+<p><strong>34. How can permissions be managed in JIRA?</strong><br />
+Via permission schemes assigned to roles and groups.</p>
+<p><strong>35. What are roles in JIRA?</strong><br />
+Roles like Developer, Tester, Project Lead control access and visibility.</p>
+<p><strong>36. What is a quick filter?</strong><br />
+A button to filter issues quickly on a board using JQL.</p>
+<p><strong>37. What is meant by “Done” in JIRA?</strong><br />
+A status that marks the issue as complete and resolved.</p>
+<p><strong>38. What are the default priorities in JIRA?</strong><br />
+Highest, High, Medium, Low, Lowest.</p>
+<p><strong>39. What are story points?</strong><br />
+Estimates of effort required to complete a user story.</p>
+<p><strong>40. What are burndown charts?</strong><br />
+Visuals that track remaining work over time during a sprint.</p>
+<p><strong>41. What’s the purpose of a release version in JIRA?</strong><br />
+To bundle completed issues for delivery and reporting.</p>
+<p><strong>42. How can you attach files to issues?</strong><br />
+Using the “Attach” option in the issue view.</p>
+<p><strong>43. What are issue types you can customize?</strong><br />
+Custom issue types like Change Request, Feature, Spike, etc.</p>
+<p><strong>44. What is an automation rule in JIRA?</strong><br />
+A rule that automates repetitive tasks (e.g., auto-assigning, status updates).</p>
+<p><strong>45. What is the difference between Issue Type Scheme and Workflow Scheme?</strong><br />
+Issue Type Scheme defines issue types per project; Workflow Scheme maps those to workflows.</p>
+<p><strong>46. What is Confluence, and how does it relate to JIRA?</strong><br />
+It’s Atlassian’s documentation tool that integrates with JIRA to link specs to issues.</p>
+<p><strong>47. Can we clone issues in JIRA?</strong><br />
+Yes, using the Clone option to copy issue details.</p>
+<p><strong>48. Can JIRA be used for test case management?</strong><br />
+Yes, either via plugins like Xray, Zephyr or by creating custom test issue types.</p>
+<p><strong>49. How do you track defects in JIRA?</strong><br />
+Using Bug issue types with priorities, affected versions, linked stories.</p>
+<p><strong>50. How does JIRA improve quality and delivery?</strong><br />
+By providing visibility, accountability, traceability, and collaboration across the development lifecycle.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.top", "navigation.tabs"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></script>
+      
+    
+  </body>
+</html>

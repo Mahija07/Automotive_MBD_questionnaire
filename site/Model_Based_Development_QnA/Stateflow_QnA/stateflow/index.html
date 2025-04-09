@@ -6,27 +6,17 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="A technical vault for Automotive MBD Developers">
       
       
-        <meta name="author" content="Mahija07">
       
       
-        <link rel="canonical" href="https://mahija07.github.io/AutoDevVault/Model_Based_Development_QnA/Stateflow_QnA/stateflow/">
       
-      
-        <link rel="prev" href="../../Simulink_QnA/simulink/">
-      
-      
-        <link rel="next" href="../../TLC_QnA/TLC/">
-      
-      
-      <link rel="icon" href="../../../images/favicon.ico">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
     
     
       
-        <title>Stateflow - AutoDev Vault by Mahija</title>
+        <title>📚 STATEFLOW - 🚗 AutoDev Vault by Mahija</title>
       
     
     
@@ -47,10 +37,12 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Fira Code"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -76,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#what-is-stateflow" class="md-skip">
+        <a href="#stateflow" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +82,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="AutoDev Vault by Mahija" class="md-header__button md-logo" aria-label="AutoDev Vault by Mahija" data-md-component="logo">
+    <a href="../../.." title="🚗 AutoDev Vault by Mahija" class="md-header__button md-logo" aria-label="🚗 AutoDev Vault by Mahija" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -104,13 +96,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            AutoDev Vault by Mahija
+            🚗 AutoDev Vault by Mahija
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Stateflow
+              📚 STATEFLOW
             
           </span>
         </div>
@@ -147,8 +139,6 @@
         </button>
       </nav>
       
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
@@ -164,18 +154,6 @@
 </div>
       
     
-    
-      <div class="md-header__source">
-        <a href="https://github.com/Mahija07/Automotive_MBD_questionnaire" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
-  </div>
-  <div class="md-source__repository">
-    GitHub
-  </div>
-</a>
-      </div>
     
   </nav>
   
@@ -210,177 +188,6 @@
   
 
       
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../feedback/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Feedback & Contact
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    
-  
-  
-    
-    
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../mbd/" class="md-tabs__link">
-          
-  
-  
-  Model-Based Development
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../../Code_Based_Development_QnA/cbd/" class="md-tabs__link">
-          
-  
-  
-  Code-Based Development
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../../AUTOSAR_QnA/autsar/" class="md-tabs__link">
-          
-  
-  
-  AUTOSAR & RTE
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../../Polyspace_QnA/polyspace/" class="md-tabs__link">
-          
-  
-  
-  Software Quality and Safety Standards/Tools
-
-        </a>
-      </li>
-    
-  
-
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../../coming_soon/" class="md-tabs__link">
-          
-  
-  
-  Tools & Scripting
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../../coming_soon_Test/" class="md-tabs__link">
-          
-  
-  
-  Testing & Safety
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../../coming_soon_Sys/" class="md-tabs__link">
-          
-  
-  
-  System Design & Integration
-
-        </a>
-      </li>
-    
-  
-
-      
     </ul>
   </div>
 </nav>
@@ -403,26 +210,14 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="AutoDev Vault by Mahija" class="md-nav__button md-logo" aria-label="AutoDev Vault by Mahija" data-md-component="logo">
+    <a href="../../.." title="🚗 AutoDev Vault by Mahija" class="md-nav__button md-logo" aria-label="🚗 AutoDev Vault by Mahija" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    AutoDev Vault by Mahija
+    🚗 AutoDev Vault by Mahija
   </label>
-  
-    <div class="md-nav__source">
-      <a href="https://github.com/Mahija07/Automotive_MBD_questionnaire" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
-  </div>
-  <div class="md-source__repository">
-    GitHub
-  </div>
-</a>
-    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -448,944 +243,6 @@
   
 
     
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../feedback/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Feedback & Contact
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-      
-        
-        
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
-    Model-Based Development
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            Model-Based Development
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../mbd/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    MBD
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Simulink_QnA/simulink/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Simulink
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Stateflow
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    Stateflow
-    
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-stateflow" class="md-nav__link">
-    <span class="md-ellipsis">
-      🌟 What is Stateflow?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#where-and-when-do-we-use-stateflow" class="md-nav__link">
-    <span class="md-ellipsis">
-      🛠️ Where and When Do We Use Stateflow?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#use-cases-in-the-automotive-industry" class="md-nav__link">
-    <span class="md-ellipsis">
-      🚗 Use Cases in the Automotive Industry
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-does-it-work" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧩 How Does It Work?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#benefits-of-using-stateflow" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ Benefits of Using Stateflow
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-scenario" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔧 Example Scenario
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔧 Example Scenario">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#stateflow-interview-questions-and-answers" class="md-nav__link">
-    <span class="md-ellipsis">
-      ** 📋 Stateflow Interview Questions and Answers**
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#basic-level-stateflow-fundamentals" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔹 Basic Level: Stateflow Fundamentals
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../TLC_QnA/TLC/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    TLC
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../MIL_QnA/MIL/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    MIL
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../SIL_QnA/SIL/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    SIL
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Code-Based Development
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            Code-Based Development
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../Code_Based_Development_QnA/cbd/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    CBD
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    AUTOSAR & RTE
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            AUTOSAR & RTE
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../AUTOSAR_QnA/autsar/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    AUTOSAR
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Software Quality and Safety Standards/Tools
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
-            Software Quality and Safety Standards/Tools
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_1" >
-        
-          
-          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Tools
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_1">
-            <span class="md-nav__icon md-icon"></span>
-            Tools
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../Polyspace_QnA/polyspace/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Polyspace
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../Polyspace_QnA/sonarqube/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    SonarQube
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Standards
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_2">
-            <span class="md-nav__icon md-icon"></span>
-            Standards
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../Polyspace_QnA/Standards/MISRA_C_Guidelines/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    MISRA C Guidelines
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../Polyspace_QnA/Standards/ISO-26262/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    ISO 26262
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
-        
-          
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Tools & Scripting
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
-            <span class="md-nav__icon md-icon"></span>
-            Tools & Scripting
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../coming_soon/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    MATLAB
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
-        
-          
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Testing & Safety
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
-            <span class="md-nav__icon md-icon"></span>
-            Testing & Safety
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../coming_soon_Test/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Google-Test
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
-        
-          
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    System Design & Integration
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_9">
-            <span class="md-nav__icon md-icon"></span>
-            System Design & Integration
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../coming_soon_Sys/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Zonal-Architecture
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -1402,6 +259,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+  
+    
   
   
     <label class="md-nav__title" for="__toc">
@@ -1503,24 +362,20 @@
                   
 
 
-  
-  
 
-
-  <h1>Stateflow</h1>
-
-<h2 id="what-is-stateflow">🌟 <strong>What is Stateflow?</strong><a class="headerlink" href="#what-is-stateflow" title="Permanent link">&para;</a></h2>
+<h1 id="stateflow">📚 STATEFLOW</h1>
+<h2 id="what-is-stateflow">🌟 <strong>What is Stateflow?</strong></h2>
 <p><strong>Stateflow</strong> is an add-on tool for <strong>Simulink</strong> that allows you to design and simulate <strong>state machines</strong> and <strong>flow charts</strong> for <strong>sequential logic</strong> and <strong>control behavior</strong>.</p>
 <p>It helps when your system needs to <strong>make decisions</strong>, <strong>switch modes</strong>, or <strong>respond to events or conditions</strong> — things that aren’t easily modeled using basic Simulink blocks.</p>
 <hr />
-<h2 id="where-and-when-do-we-use-stateflow">🛠️ <strong>Where and When Do We Use Stateflow?</strong><a class="headerlink" href="#where-and-when-do-we-use-stateflow" title="Permanent link">&para;</a></h2>
+<h2 id="where-and-when-do-we-use-stateflow">🛠️ <strong>Where and When Do We Use Stateflow?</strong></h2>
 <p>Stateflow is best used when your system:
 - Has <strong>different operating modes</strong> (e.g., OFF, IDLE, RUN)
 - Requires <strong>event-based behavior</strong> (like "if brake is pressed, switch to STOP mode")
 - Needs <strong>hierarchical control</strong> or <strong>nested states</strong> (substates inside main states)
 - Involves <strong>sequential task execution</strong> or <strong>timing-based actions</strong></p>
 <hr />
-<h2 id="use-cases-in-the-automotive-industry">🚗 <strong>Use Cases in the Automotive Industry</strong><a class="headerlink" href="#use-cases-in-the-automotive-industry" title="Permanent link">&para;</a></h2>
+<h2 id="use-cases-in-the-automotive-industry">🚗 <strong>Use Cases in the Automotive Industry</strong></h2>
 <table>
 <thead>
 <tr>
@@ -1552,7 +407,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="how-does-it-work">🧩 <strong>How Does It Work?</strong><a class="headerlink" href="#how-does-it-work" title="Permanent link">&para;</a></h2>
+<h2 id="how-does-it-work">🧩 <strong>How Does It Work?</strong></h2>
 <p>Stateflow uses:
 - <strong>States</strong> (boxes): Represent system modes.
 - <strong>Transitions</strong> (arrows): Show conditions that cause state changes.
@@ -1563,7 +418,7 @@
 - <strong>History junctions</strong>: Resume from the last active substate
 - <strong>Parallel states</strong>: Run independent state machines side by side</p>
 <hr />
-<h2 id="benefits-of-using-stateflow">✅ <strong>Benefits of Using Stateflow</strong><a class="headerlink" href="#benefits-of-using-stateflow" title="Permanent link">&para;</a></h2>
+<h2 id="benefits-of-using-stateflow">✅ <strong>Benefits of Using Stateflow</strong></h2>
 <ul>
 <li>Visual representation of complex decision logic</li>
 <li>Easy to model real-world behavior like mode-switching</li>
@@ -1572,7 +427,7 @@
 <li>Supports <strong>code generation</strong> for production ECUs using Embedded Coder</li>
 </ul>
 <hr />
-<h2 id="example-scenario">🔧 Example Scenario<a class="headerlink" href="#example-scenario" title="Permanent link">&para;</a></h2>
+<h2 id="example-scenario">🔧 Example Scenario</h2>
 <p>Imagine a <strong>headlamp control system</strong> with logic:</p>
 <ol>
 <li>OFF → when ignition is off  </li>
@@ -1583,9 +438,9 @@
 <p>[OFF] → [AUTO] → [MANUAL ON]
       ↘ based on light sensor</p>
 <hr />
-<h3 id="stateflow-interview-questions-and-answers">** 📋 Stateflow Interview Questions and Answers**<a class="headerlink" href="#stateflow-interview-questions-and-answers" title="Permanent link">&para;</a></h3>
+<h3 id="stateflow-interview-questions-and-answers">** 📋 Stateflow Interview Questions and Answers**</h3>
 <hr />
-<h3 id="basic-level-stateflow-fundamentals">🔹 <strong>Basic Level: Stateflow Fundamentals</strong><a class="headerlink" href="#basic-level-stateflow-fundamentals" title="Permanent link">&para;</a></h3>
+<h3 id="basic-level-stateflow-fundamentals">🔹 <strong>Basic Level: Stateflow Fundamentals</strong></h3>
 <p><strong>1. What is Stateflow?</strong><br />
 Stateflow is a MATLAB/Simulink add-on used to model and simulate state machines and flow charts for event-driven or reactive systems. It complements Simulink by providing capabilities to model complex logic such as mode switching, decision-making, and sequential control.</p>
 <p><strong>2. When should you use Stateflow over Simulink blocks?</strong><br />
@@ -1711,6 +566,7 @@ Subcharts allow you to reuse state logic in multiple places, improving modularit
 They define data objects for interfacing with Simulink, controlling properties like storage class, data type, and tunability.</p>
 <p><strong>50. What is a graphical function in Stateflow?</strong><br />
 A graphical function is a reusable block of logic within a chart that can take inputs, perform operations, and return outputs. It's drawn like a flowchart.</p>
+<p><a class="back-sidebar-btn" href="javascript:history.back()">⬅️ Back</a></p>
 
 
 
@@ -1765,10 +621,14 @@ A graphical function is a reusable block of logic within a chart that can take i
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.expand", "navigation.top", "content.code.annotate", "navigation.instant", "navigation.tabs", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.top", "navigation.tabs"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></script>
       
     
   </body>
