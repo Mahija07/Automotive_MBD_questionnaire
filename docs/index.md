@@ -1,79 +1,152 @@
+<!-- index.md - Fully redesigned layout -->
 <style>
-:root {
-  --bg-dark: #0f0f1a;
-  --card-dark: #1e1e2f;
-  --text-dark: #f8f8ff;
-  --accent-pink: #ff5ebc;
-  --accent-yellow: #fcd34d;
-  --accent-red: #ff6b6b;
-  --card-hover: #2a2a40;
-}
+  :root {
+    --bg-dark: #0f0f1a;
+    --card-dark: #1e1e2f;
+    --text-light: #f8f8ff;
+    --accent-pink: #ff5ebc;
+    --accent-yellow: #fcd34d;
+    --accent-red: #ff6b6b;
+    --card-hover: #2a2a40;
+  }
 
-[data-md-color-scheme="slate"] {
-  --md-primary-fg-color: var(--accent-pink);
-  --md-accent-fg-color: var(--accent-yellow);
-}
+  body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
 
-body {
-  background-color: var(--bg-dark);
-  color: var(--text-dark);
-}
+  .header {
+    text-align: center;
+    padding: 2rem 1rem 1rem;
+  }
 
-h1 {
-  color: var(--accent-pink);
-  text-align: center;
-  margin-top: 2rem;
-  font-size: 2.5rem;
-}
+  .header h1 {
+    font-size: 2.8rem;
+    color: var(--accent-pink);
+    margin: 0;
+  }
 
-.intro {
-  text-align: center;
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  color: var(--text-dark);
-}
+  .intro {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0.5rem auto 2rem;
+    color: var(--text-light);
+  }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem;
-}
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
 
-.card {
-  background-color: var(--card-dark);
-  border: 1px solid var(--accent-pink);
-  border-radius: 12px;
-  padding: 1.5rem;
-  text-decoration: none;
-  color: var(--text-dark);
-  transition: transform 0.3s ease, background 0.3s ease;
-  font-family: 'Segoe UI', sans-serif;
-}
+  .card-flip {
+    perspective: 1200px;
+    width: 100%;
+    height: 260px;
+  }
 
-.card:hover {
-  background-color: var(--card-hover);
-  transform: translateY(-5px);
-  border-color: var(--accent-yellow);
-}
+  .card-inner {
+    position: relative;
+    width: 100%;
+    height: 110%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
 
-.card h2 {
-  margin-top: 0;
-  color: var(--accent-pink);
-  font-size: 1.3rem;
-}
+  .card-flip:hover .card-inner {
+    transform: rotateY(180deg);
+  }
 
-.card p {
-  font-size: 0.95rem;
-  line-height: 1.4;
-}
+  .card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    background-color: var(--card-dark);
+    border: 1px solid var(--accent-pink);
+    border-radius: 1rem;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  .card-back {
+    transform: rotateY(180deg);
+  }
+
+  .card-front h2, .card-back h3 {
+    color: var(--accent-pink);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .card-front p, .card-back ul {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    line-height: 1.4;
+  }
+
+  .card-back ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .card-back ul li {
+    margin-bottom: 0.3rem;
+  }
+
+  .card-back ul li a {
+    color: var(--accent-yellow);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .card-back ul li a:hover {
+    color: var(--accent-red);
+    text-decoration: underline;
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #aaa;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
+    margin-top: 3rem;
+  }
 </style>
 
-# 🚗 AutoDev Vault by Mahija
+<div class="car-dance">
+  <span class="car car1">🚗</span>
+  <span class="car car2">🚙</span>
+  <span class="car car3">🏎️</span>
+  <span class="car car4">🚘</span>
+  <span class="car car5">🚕</span>
+  <span class="car car6">🚓</span>
+  <span class="car car7">🛻</span>
+  <span class="car car8">🚐</span>
+  <span class="car car9">🚔</span>
+  <span class="car car10">🚖</span>
+  <span class="car car11">🚍</span>
+  <span class="car car12">🚛</span>
+  <span class="car car13">🚜</span>
+  <span class="car car14">🚚</span>
+  <span class="car car15">🚎</span>
+</div>
 
-<div class="intro">
-  A comprehensive technical vault for Automotive engineers.<br>
-  Dive into Model-Based Dev, Simulink, Coding, Testing & more!
+
+<div class="header">
+  <div class="intro">
+    A curated space for Automotive Engineers to explore MBD, Simulink, AUTOSAR, Testing & more.
+  </div>
 </div>
 
 <div class="card-grid">
@@ -86,14 +159,34 @@ h1 {
         <p>Simulink | Stateflow | TLC | MIL | SIL</p>
       </div>
       <div class="card-back">
-        <h3>Explore Subtopics</h3>
-        <ul class="sub-links">
-          <li><a href="Model_Based_Development_QnA/mbd/">Overview</a></li>
-          <li><a href="Model_Based_Development_QnA/simulink_QnA/simulink/">Simulink</a></li>
-          <li><a href="Model_Based_Development_QnA/stateflow_QnA/stateflow/">Stateflow</a></li>
-          <li><a href="Model_Based_Development_QnA/TLC_QnA/TLC/">TLC</a></li>
-          <li><a href="Model_Based_Development_QnA/MIL_QnA/MIL/">MIL</a></li>
-          <li><a href="Model_Based_Development_QnA/SIL_QnA/SIL/">SIL</a></li>
+        <h4>Explore Subtopics</h4>
+        <ul>
+          <li><a href="Model_Based_Development_QnA/mbd/">📚 Overview</a></li>
+          <li><a href="Model_Based_Development_QnA/simulink_QnA/simulink/">📚 Simulink</a></li>
+          <li><a href="Model_Based_Development_QnA/stateflow_QnA/stateflow/">📚 Stateflow</a></li>
+          <li><a href="Model_Based_Development_QnA/TLC_QnA/TLC/">📚 TLC</a></li>
+          <li><a href="Model_Based_Development_QnA/MIL_QnA/MIL/">📚 MIL</a></li>
+          <li><a href="Model_Based_Development_QnA/SIL_QnA/SIL/">📚 SIL</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- AUTOSAR & RTE -->
+  <div class="card-flip">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>⚙️ AUTOSAR & RTE</h2>
+        <p> | Ports | RTE | ComStack | Interfaces</p>
+      </div>
+      <div class="card-back">
+        <h4>Explore Subtopics</h4>
+        <ul>
+          <li><a href="AUTOSAR_QnA/autsar/">📚 Overview</a></li>
+          <li><a href="AUTOSAR_QnA/autsar/">📚 SWCs</a></li>
+          <li><a href="AUTOSAR_QnA/autsar/">📚 RTE</a></li>
+          <li><a href="AUTOSAR_QnA/autsar/">📚 ComStack</a></li>
+          <li><a href="AUTOSAR_QnA/autsar/">📚 Interfaces</a></li>
         </ul>
       </div>
     </div>
@@ -107,25 +200,13 @@ h1 {
         <p>Embedded C | MISRA | Unit Testing | Coding Guidelines</p>
       </div>
       <div class="card-back">
-        <h3>Explore Subtopics</h3>
-        <ul class="sub-links">
-          <li><a href="Code_Based_Development_QnA/cbd/">All Topics</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- AUTOSAR -->
-  <div class="card-flip">
-    <div class="card-inner">
-      <div class="card-front">
-        <h2>⚙️ AUTOSAR & RTE</h2>
-        <p>SWCs | Ports | RTE | ComStack | Interfaces</p>
-      </div>
-      <div class="card-back">
-        <h3>Explore Subtopics</h3>
-        <ul class="sub-links">
-          <li><a href="AUTOSAR_QnA/autsar/">All Topics</a></li>
+        <h4>Explore Subtopics</h4>
+        <ul>
+          <li><a href="Code_Based_Development_QnA/cbd/">📚 Overview</a></li>
+          <li><a href="Code_Based_Development_QnA/cbd/">📚 Embedded C</a></li>
+          <li><a href="Code_Based_Development_QnA/cbd/">📚 MISRA</a></li>
+          <li><a href="Code_Based_Development_QnA/cbd/">📚 Unit Testing</a></li>
+          <li><a href="Code_Based_Development_QnA/cbd/">📚 Coding Guidelines</a></li>
         </ul>
       </div>
     </div>
@@ -136,12 +217,16 @@ h1 {
     <div class="card-inner">
       <div class="card-front">
         <h2>🧪 Software Quality & Safety</h2>
-        <p>POLYSPACE | SONARQUBE | MISRA C | ISO-26262</p>
+        <p>Polyspace | SonarQube | MISRA C | ISO 26262</p>
       </div>
       <div class="card-back">
-        <h3>Explore Subtopics</h3>
-        <ul class="sub-links">
-          <li><a href="Polyspace_QnA/polyspace/">Polyspace</a></li>
+        <h4>Explore Subtopics</h4>
+        <ul>
+          <li><a href="Polyspace_QnA/sqss/">📚 Overview</a></li>
+          <li><a href="Polyspace_QnA/polyspace/">📚 Polyspace</a></li>
+          <li><a href="Polyspace_QnA/sonarqube/">📚 SonarQube</a></li>
+          <li><a href="Polyspace_QnA/Standards/MISRA_C_Guidelines/">📚 MISRA C</a></li>
+          <li><a href="Polyspace_QnA/Standards/ISO-26262/">📚 ISO 26262</a></li>
         </ul>
       </div>
     </div>
@@ -155,9 +240,14 @@ h1 {
         <p>MATLAB | Python | Git | VSCode | Automation</p>
       </div>
       <div class="card-back">
-        <h3>Coming Soon</h3>
-        <ul class="sub-links">
-          <li><a href="coming_soon/">Preview Tools</a></li>
+        <h4>Explore Subtopics</h4>
+        <ul>
+          <li><a href="Tools_Scripting_QnA/tools/">📚 Overview</a></li>
+          <li><a href="coming_soon/">📚 MATLAB</a></li>
+          <li><a href="coming_soon/">📚 Python</a></li>
+          <li><a href="coming_soon/">📚 Git</a></li>
+          <li><a href="coming_soon/">📚 VSCode</a></li>
+          <li><a href="coming_soon/">📚 Automation</a></li>
         </ul>
       </div>
     </div>
@@ -171,15 +261,19 @@ h1 {
         <p>GoogleTest | ISO 26262 | JIRA | Safety Standards</p>
       </div>
       <div class="card-back">
-        <h3>Coming Soon</h3>
-        <ul class="sub-links">
-          <li><a href="coming_soon_test/">Preview Topics</a></li>
+        <h4>Explore Subtopics</h4>
+        <ul>
+          <li><a href="Testing_Safety_QnA/testing/">📚 Overview</a></li>
+          <li><a href="coming_soon/">📚 GoogleTest</a></li>
+          <li><a href="coming_soon/">📚 ISO 26262</a></li>
+          <li><a href="coming_soon/">📚 JIRA</a></li>
+          <li><a href="coming_soon/">📚 Safety Standards</a></li>
         </ul>
       </div>
     </div>
   </div>
 
-  <!-- System Design & Integration -->
+  <!-- System Design -->
   <div class="card-flip">
     <div class="card-inner">
       <div class="card-front">
@@ -187,9 +281,12 @@ h1 {
         <p>Prevision | Zonal Architecture | MagicDraw</p>
       </div>
       <div class="card-back">
-        <h3>Coming Soon</h3>
-        <ul class="sub-links">
-          <li><a href="coming_soon_sys/">Preview Topics</a></li>
+        <h4>Explore Subtopics</h4>
+        <ul>
+          <li><a href="System_Design_QnA/system/">📚 Overview</a></li>
+          <li><a href="System_Design_QnA/magicdraw/magicdraw_qna/">📚 MagicDraw</a></li>
+          <li><a href="System_Design_QnA/preevision/preevision_qna/">📚 Prevision</a></li>
+          <li><a href="System_Design_QnA/zonal_architecture/zonal_architecture_qna/">📚 Zonal Architecture</a></li>
         </ul>
       </div>
     </div>
@@ -197,7 +294,7 @@ h1 {
 
 </div>
 
-
- <footer>
-    Made with ❤️ by Mahija · Powered by MkDocs & GitHub Pages
-  </footer>
+<footer>
+  <p>📬 Want to reach out? <a href="feedback/">Give Feedback or Contact Me</a></p>
+  <p>Made with ❤️ by Mahija · Powered by MkDocs & GitHub Pages</p>
+</footer>

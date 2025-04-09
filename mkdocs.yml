@@ -1,74 +1,28 @@
-site_name: AutoDev Vault by Mahija
-site_author: Mahija07
-site_description: A technical vault for Automotive MBD Developers
-site_url: https://mahija07.github.io/AutoDevVault/
-repo_url: https://github.com/Mahija07/Automotive_MBD_questionnaire
+site_name: "🚗 AutoDev Vault by Mahija"
 theme:
   name: material
   features:
-    - navigation.expand
+    - navigation.tabs  # helps organize topbar
     - navigation.top
-    - content.code.annotate
+
+theme:
+  name: material
+  features:
     - navigation.instant
-    - navigation.tabs
-    - search.suggest
-    - search.highlight
+    - navigation.top
+    - navigation.tabs   # REMOVE this line if present
   palette:
-    scheme: slate  # Default to dark theme
+    scheme: slate
     primary: pink
     accent: yellow
-  font:
-    text: Roboto
-    code: Fira Code
-  favicon: images/favicon.ico  # Optional: Add your custom favicon
 
 nav:
   - Home: index.md
-  - Feedback & Contact: feedback.md
-  - Model-Based Development:
-      - Overview: Model_Based_Development_QnA/mbd.md
-      - Simulink: Model_Based_Development_QnA/Simulink_QnA/simulink.md
-      - Stateflow: Model_Based_Development_QnA/Stateflow_QnA/stateflow.md
-      - TLC: Model_Based_Development_QnA/TLC_QnA/TLC.md
-      - MIL: Model_Based_Development_QnA/MIL_QnA/MIL.md
-      - SIL: Model_Based_Development_QnA/SIL_QnA/SIL.md
-  - Code-Based Development:
-      - Overview: Code_Based_Development_QnA/cbd.md
-  - AUTOSAR & RTE:
-      - Overview: AUTOSAR_QnA/autsar.md
-  - Software Quality and Safety Standards/Tools:
-    - Overview: Polyspace_QnA/sqss.md
-    - Tools:
-      - Polyspace: Polyspace_QnA/polyspace.md
-      - SonarQube: Polyspace_QnA/sonarqube.md
-    - Standards:
-      - MISRA C Guidelines: Polyspace_QnA/Standards/MISRA_C_Guidelines.md
-      - ISO 26262: Polyspace_QnA/Standards/ISO-26262.md
-  - Tools & Scripting:
-      - MATLAB: coming_soon.md
-  - Testing & Safety:
-      - Google-Test: coming_soon_Test.md
-  - System Design & Integration:
-    - Overview: System_Design_QnA/system.md
-    - Magic-Draw: System_Design_QnA/magicdraw/magicdraw_qna.md
-    - PREEvision: System_Design_QnA/preevision/preevision_qna.md
-    - Zonal-Architecture: System_Design_QnA/zonal_architecture/zonal_architecture_qna.md
-
-markdown_extensions:
-  - toc:
-      permalink: true
-  - admonition
-  - codehilite
-  - footnotes
-  - meta
-  - def_list
-  - pymdownx.highlight
-  - pymdownx.superfences
-  - pymdownx.inlinehilite
-  - pymdownx.details
-  - pymdownx.magiclink
-  - pymdownx.betterem
 
 extra_css:
   - stylesheets/extra.css
-  - https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css
+
+extra_javascript:
+  - https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap
+  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css
+
