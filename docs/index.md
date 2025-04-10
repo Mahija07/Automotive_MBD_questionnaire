@@ -290,6 +290,7 @@
   </div>
 
 </div>
+<!-- we need to work on linux, communication protocols(can lin, ethernet, uds), different kind of features in a vehicle and how and why they are categorized in a diffrent different ways, how we consider different zonal modules and the whole process from what where when to how a vehicle works from user end to resource side, including services and actuators and if somehwere the microservices are that too and what is ECU extract and why it happens, software requirements and system requirements, types of coverage and what does it mean how to cover that in MIL and for GTest also, think for Q1, Q2 and Q3 level testing for a vehicle -->
 
 <footer>
   <p>📬 Want to reach out? <a href="feedback/">Give Feedback or Contact Me</a></p>

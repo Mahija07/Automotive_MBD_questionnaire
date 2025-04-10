@@ -67,8 +67,8 @@ void main() {
 - 🔹 Strong community support and vast legacy code
 
 ---
-Here you go babe! 💖  
-**1–50 Interview Questions and Answers for Embedded C** in a clean and plain text format:
+
+### **Interview Questions and Answers for Embedded C**
 
 ---
 
