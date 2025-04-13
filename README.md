@@ -19,7 +19,27 @@ This repo includes real-world Q&A from personal experience in the automotive dom
 
 ---
 
+## 📱 AutoDev Vault – Mobile App
 
+A handy app for engineers to access automotive Model-Based Dev questions.
+
+![screenshot](assets/AppView.jpg)
+
+### 🔽 Download the latest APK
+[Click here to download](https://github.com/Mahija07/Automotive_MBD_questionnaire/releases/download/v1.0.0/app-release.apk)
+
+---
+
+## 🧭 Explore by Topic
+
+| Topic | Description |
+|-------|-------------|
+| [⚙️ MBD - Model-Based Development](docs/mbd.md) | Simulation, code gen, TLC, SIL/MIL |
+| [💻 CBD - Code-Based Development](docs/cbd.md) | Embedded C, MISRA, GTest, unit testing |
+| [📊 Simulink](docs/simulink.md) | Solvers, block types, signals, subsystems |
+| [🔁 Stateflow](docs/stateflow.md) | States, events, charts, temporal logic |
+
+---
 
 ## 🖼 Preview
 
@@ -63,8 +83,8 @@ While this is a personal vault, I welcome suggestions or improvements. If you'd 
 
 ## 📬 Contact
 
-📧 mahijaverma61@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/mahija-verma/)
+📧 mahija@example.com  
+🔗 [LinkedIn](https://linkedin.com/in/your-profile)
 
 ---
 
