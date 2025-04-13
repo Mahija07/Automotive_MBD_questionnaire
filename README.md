@@ -23,7 +23,7 @@ This repo includes real-world Q&A from personal experience in the automotive dom
 
 A handy app for engineers to access automotive Model-Based Dev questions.
 
-![screenshot](assets/AppView.jpg)
+![screenshot](assets/AppView.png)
 
 ### 🔽 Download the latest APK
 [Click here to download](https://github.com/Mahija07/Automotive_MBD_questionnaire/releases/download/v1.0.0/app-release.apk)
