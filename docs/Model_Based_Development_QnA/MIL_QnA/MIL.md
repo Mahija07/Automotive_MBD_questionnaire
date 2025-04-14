@@ -39,6 +39,119 @@
 
 ---
 
+### Different Coverages in MIL
+
+    Here's a focused deep dive into **Decision**, **Condition**, and **MC/DC (Modified Condition/Decision Coverage)**—the three core structural coverage types used extensively in **Model-in-the-Loop (MIL)** testing and safety-critical automotive software development (like ISO 26262 compliance).
+
+    ---
+
+    ## 1️⃣ Decision Coverage (DC)
+
+    ### 🔹 What is it?
+    It ensures that **each decision point** (e.g., `if`, `switch`, `case`) in the model evaluates to both **true** and **false** at least once.
+
+    ### 🔍 Example:
+    ```matlab
+    if (speed > 100)
+        brake = 1;
+    else
+        brake = 0;
+    end
+    ```
+
+    **Test Requirements**:
+    - One test where `speed > 100` → `true`
+    - One test where `speed <= 100` → `false`
+
+    ### ✅ Goal:
+    - Cover both outcomes of each decision expression.
+
+    ### 💡 How to Achieve It?
+    - Design test cases that toggle each decision condition.
+    - Use step or ramp inputs to vary across decision thresholds.
+
+    ---
+
+    ## 2️⃣ Condition Coverage (CC)
+
+    ### 🔹 What is it?
+    It ensures that **each atomic condition** in a compound decision is **evaluated to both true and false**, regardless of the decision result.
+
+    ### 🔍 Example:
+    ```matlab
+    if ((speed > 100) && (brakePedalPressed == 1))
+        applyBrakes = 1;
+    end
+    ```
+
+    **Atomic Conditions**:
+    - `speed > 100`
+    - `brakePedalPressed == 1`
+
+    **Test Requirements**:
+    - `speed > 100` → true and false
+    - `brakePedalPressed == 1` → true and false
+
+    > It does **not** require that each condition independently affects the decision, only that each is toggled.
+
+    ### ✅ Goal:
+    - Ensure every condition expression is exercised with both outcomes.
+
+    ### 💡 How to Achieve It?
+    - Individually manipulate each condition input in your test cases.
+    - Make sure both TRUE and FALSE values are evaluated.
+
+    ---
+
+    ## 3️⃣ Modified Condition/Decision Coverage (MC/DC)
+
+    ### 🔹 What is it?
+    A **stricter** form of testing than DC or CC. MC/DC ensures:
+    - Each **condition** is evaluated **true and false**
+    - Each **condition affects** the **decision outcome independently**
+
+    ### 🔍 Example:
+    ```matlab
+    if ((engineOn == true) && (gear == 1))
+        moveCar = true;
+    end
+    ```
+
+    Here, two conditions:
+    - `engineOn == true`
+    - `gear == 1`
+
+    To satisfy **MC/DC**, you must show:
+    - Changing `engineOn` alone changes `moveCar`
+    - Changing `gear` alone changes `moveCar`
+
+    | Test Case | engineOn | gear | moveCar |
+    |-----------|----------|------|---------|
+    | 1         | true     | true | true    |
+    | 2         | false    | true | false   |
+    | 3         | true     | false| false   |
+
+    > In Test Case 1 → 2: engineOn changes and affects output.  
+    > In Test Case 1 → 3: gear changes and affects output.
+
+    ### ✅ Goal:
+    - Prove **independent influence** of each condition.
+
+    ### 💡 How to Achieve It?
+    - Create minimal test pairs that toggle one condition at a time.
+    - Simulink Design Verifier can auto-generate MC/DC test cases.
+
+    ---
+
+    ## 📌 Summary Table
+
+    | Coverage Type  | Condition Toggle | Decision Evaluation | Independent Impact |
+    |----------------|------------------|---------------------|--------------------|
+    | Decision       | No               | Yes                 | No                 |
+    | Condition      | Yes              | No                  | No                 |
+    | MC/DC          | Yes              | Yes                 | Yes                |
+
+
 ### ** 📋 MIL (Model-in-the-Loop) Interview Questions and Answers**
 
 ---

@@ -32,6 +32,19 @@
   margin-bottom: 1rem;
 }
 
+.upcoming-concepts {
+  text-align: left;
+  max-width: 500px;
+  margin-top: 40px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.upcoming-concepts ul {
+  list-style-type: "📌 ";
+  padding-left: 20px;
+}
+
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
@@ -45,5 +58,35 @@
 <div class="coming-soon-container">
   <div class="loader"></div>
   <div class="coming-soon-title">🚧 Coming Soon</div>
-  <div class="coming-soon-subtitle">We're working on something amazing.<br>Check back again very soon!</div>
+  <div class="coming-soon-subtitle">
+    We're working on something amazing.<br>Check back again very soon!
+  </div>
+
+  <div class="upcoming-concepts">
+    <strong>📚 Upcoming Concepts:</strong>
+    <ul>
+      <li>QT</li>
+      <li>Bluetooth</li>
+      <li>RTOS (Real-Time Operating Systems)</li>
+      <li>PCB Design</li>
+      <li>Hardware Interfaces</li>
+      <li>Validation & Testing</li>
+      <li>WiFi Integration</li>
+      <li>Linux Kernel</li>
+      <li>TCP/IP Networking</li>
+      <li>OpenWRT</li>
+      <li>Verification & Validation Engineer Role</li>
+      <li>OEM, Tier 1 & Tier 2 Suppliers</li>
+      <li>Vehicle Manufacturing Layers</li>
+      <li>Firmware Development</li>
+      <li>Test Automation</li>
+      <li>Python in Automotive</li>
+      <li>Powertrain Control</li>
+      <li>Battery Management Systems (BMS)</li>
+      <li>HMI & Infotainment Systems</li>
+      <li>CAN Bus Communication</li>
+      <li>ASPICE Process Model</li>
+      <li>TargetLink</li>
+    </ul>
+  </div>
 </div>

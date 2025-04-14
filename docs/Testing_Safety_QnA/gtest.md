@@ -56,6 +56,216 @@ Because:
 - ✅ Makes your software **robust, testable, and production-ready**
 
 
+### Coverage Types in GTest:
+
+1. **Statement Coverage (Line Coverage)**
+2. **Branch Coverage (Decision Coverage)**
+3. **Path Coverage**
+4. **Condition Coverage**
+5. **Modified Condition/Decision Coverage (MC/DC)**
+
+Each type of coverage ensures different aspects of the code are thoroughly tested.
+
+---
+
+### 1️⃣ **Statement Coverage (Line Coverage)**
+
+**What It Means**:  
+This coverage type ensures that **every line of code** in the program is executed at least once during the tests.
+
+**How to Achieve It**:
+- Create tests that trigger every line of your function/method.
+- Each line of your function should be executed by at least one test case.
+
+**Example**:
+
+```cpp
+bool checkEngineStatus(int engineTemperature, bool engineRunning) {
+    if (engineRunning) {
+        if (engineTemperature > 90) {
+            return true;
+        }
+    }
+    return false;
+}
+```
+
+To cover this:
+
+1. **Test 1**: `engineTemperature = 100, engineRunning = true` → hits line 3 and 4.
+2. **Test 2**: `engineTemperature = 80, engineRunning = true` → hits line 3 but not line 4.
+
+By running tests that cover both the `if` conditions, you achieve **Statement Coverage**.
+
+**Tools**:  
+- Use **gcov**, **lcov**, or **Bullseye** to measure line coverage.
+  
+---
+
+### 2️⃣ **Branch Coverage (Decision Coverage)**
+
+**What It Means**:  
+This type ensures that **each decision point** (i.e., `if` or `switch` statements) takes on **both possible outcomes**—true and false.
+
+**How to Achieve It**:
+- Ensure that every **decision point** (condition inside an `if`, `while`, `switch`, etc.) evaluates to both **true** and **false**.
+
+**Example**:
+
+```cpp
+bool isSpeedSafe(int speed) {
+    if (speed > 120) {
+        return false;  // dangerous
+    } else {
+        return true;   // safe
+    }
+}
+```
+
+To cover **branch coverage**:
+- **Test 1**: `speed = 130` → goes through the `if` block, evaluates to **false**.
+- **Test 2**: `speed = 110` → goes through the `else` block, evaluates to **true**.
+
+**Tools**:  
+- **gcov** or **lcov** will report branch coverage to show that both branches are tested.
+
+---
+
+### 3️⃣ **Path Coverage**
+
+**What It Means**:  
+This type ensures that **all possible paths** through the code are exercised. This can become complex with multiple decision points (since it requires testing combinations of branches).
+
+**How to Achieve It**:
+- Identify all possible **paths** through the code, including combinations of decision branches.
+- Create test cases to cover **each unique combination of decisions** (paths).
+
+**Example**:
+
+```cpp
+bool shouldTurnOnLights(int timeOfDay, bool vehicleMoving) {
+    if (timeOfDay > 18) {
+        if (vehicleMoving) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    return false;
+}
+```
+
+Paths:
+- Path 1: `timeOfDay > 18` and `vehicleMoving = true`
+- Path 2: `timeOfDay > 18` and `vehicleMoving = false`
+- Path 3: `timeOfDay <= 18`
+
+To cover **path coverage**:
+- **Test 1**: `timeOfDay = 19, vehicleMoving = true` → Path 1.
+- **Test 2**: `timeOfDay = 19, vehicleMoving = false` → Path 2.
+- **Test 3**: `timeOfDay = 15, vehicleMoving = false` → Path 3.
+
+**Tools**:  
+- **gcov** or **lcov** will help track which paths are covered.
+
+---
+
+### 4️⃣ **Condition Coverage**
+
+**What It Means**:  
+This ensures that each **atomic condition** (in an `if` expression) is evaluated to both **true and false** at least once, regardless of the overall decision result.
+
+**How to Achieve It**:
+- Ensure that each **condition** in a compound decision (`&&`, `||`) is tested for both **true and false**.
+
+**Example**:
+
+```cpp
+bool isEmergencyStopNeeded(int speed, bool brakePressed) {
+    if (speed > 120 && brakePressed) {
+        return true;
+    }
+    return false;
+}
+```
+
+**Test Requirements**:
+- Condition 1 (`speed > 120`) → tested for both **true** and **false**
+- Condition 2 (`brakePressed`) → tested for both **true** and **false**
+
+**Test Cases**:
+- **Test 1**: `speed = 130, brakePressed = true` → tests condition 1 and 2 as **true**.
+- **Test 2**: `speed = 80, brakePressed = true` → tests condition 1 as **false**, condition 2 as **true**.
+- **Test 3**: `speed = 130, brakePressed = false` → tests condition 1 as **true**, condition 2 as **false**.
+
+**Tools**:  
+- **gcov**, **lcov** will also track condition coverage.
+
+---
+
+### 5️⃣ **Modified Condition/Decision Coverage (MC/DC)**
+
+**What It Means**:  
+MC/DC is a stricter form of coverage than **Condition** and **Branch Coverage**. It ensures that:
+- Each condition **evaluates to both true and false**.
+- Each condition's **independent effect** on the overall decision is validated (i.e., altering one condition changes the outcome).
+
+**How to Achieve It**:
+- Design tests to toggle one condition at a time while keeping others constant to show that each condition independently affects the decision.
+
+**Example**:
+
+```cpp
+bool shouldDisableAutopilot(int speed, bool driverAlert) {
+    if (speed > 120 && driverAlert) {
+        return true;
+    }
+    return false;
+}
+```
+
+Here, we need to show that:
+- `speed > 120` alone changes the result.
+- `driverAlert` alone changes the result.
+
+**Test Cases**:
+- **Test 1**: `speed = 130, driverAlert = true` → both true → decision **true**
+- **Test 2**: `speed = 130, driverAlert = false` → changes **driverAlert** → decision **false**
+- **Test 3**: `speed = 80, driverAlert = true` → changes **speed** → decision **false**
+
+**Tools**:  
+- **gcov** and **lcov** can help generate MC/DC reports when testing individual conditions.
+
+---
+
+### How to Achieve GTest Coverage:
+
+To use **Google Test** effectively for these types of coverage, you can integrate **code coverage tools** into your build system:
+
+1. **Install Coverage Tools**:
+   - **gcov** (GNU tool for coverage analysis)
+   - **lcov** (GUI frontend for gcov)
+   - **Bullseye**, **VectorCAST**, or similar tools
+
+2. **Compile with Coverage Flags**:
+   - When building the test binary, use the following GCC flags to enable coverage:
+     ```bash
+     g++ -fprofile-arcs -ftest-coverage -o my_test_binary my_test.cpp
+     ```
+
+3. **Run Tests**:
+   - Execute your GTest tests as usual. The coverage tools will record which parts of the code are exercised.
+
+4. **Generate Coverage Reports**:
+   - Use **lcov** or **gcov** to generate coverage reports:
+     ```bash
+     lcov --capture --directory . --output-file coverage.info
+     genhtml coverage.info --output-directory out
+     ```
+
+5. **Visualize**:
+   - View the HTML reports that show line coverage, branch coverage, and other metrics.
+
 ---
 
 ### **Google Test (GTest) Interview Questions and Answers**
