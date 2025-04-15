@@ -61,8 +61,8 @@
   <div class="coming-soon-subtitle">
     We're working on something amazing.<br>Check back again very soon!
   </div>
+</div>
 
-  # 🚧 Coming Soon
 
 We are continuously working to expand the scope and depth of our content. Here's a sneak peek at some of the upcoming areas we’ll be diving into:
 
