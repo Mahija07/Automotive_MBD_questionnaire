@@ -1,0 +1,915 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+    
+    
+      
+        <title>Overview - 🚗 AutoDev Vault by Mahija</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="yellow">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#end-to-end-vehicle-development-operational-workflow" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="🚗 AutoDev Vault by Mahija" class="md-header__button md-logo" aria-label="🚗 AutoDev Vault by Mahija" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            🚗 AutoDev Vault by Mahija
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Overview
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="🚗 AutoDev Vault by Mahija" class="md-nav__button md-logo" aria-label="🚗 AutoDev Vault by Mahija" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    🚗 AutoDev Vault by Mahija
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#end-to-end-vehicle-development-operational-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚗 END-TO-END VEHICLE DEVELOPMENT &amp; OPERATIONAL WORKFLOW
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚗 END-TO-END VEHICLE DEVELOPMENT &amp; OPERATIONAL WORKFLOW">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-requirement-gathering-what-why" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 1. Requirement Gathering (What &amp; Why)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧩 1. Requirement Gathering (What &amp; Why)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#goal" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Goal:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sources-of-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Sources of Requirements:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#types" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠 Types:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-system-architecture-design-when-where" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 2. System Architecture Design (When &amp; Where)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧠 2. System Architecture Design (When &amp; Where)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#goal_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Goal:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#involves" class="md-nav__link">
+    <span class="md-ellipsis">
+      👷‍♀️ Involves:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-software-ecu-architecture-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ 3. Software &amp; ECU Architecture Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚙️ 3. Software &amp; ECU Architecture Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#goal_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Goal:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Steps:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-model-based-development-simulinkstateflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      👩‍💻 4. Model-Based Development (Simulink/Stateflow)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="👩‍💻 4. Model-Based Development (Simulink/Stateflow)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#goal_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Goal:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧱 Tasks:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-integration-testing-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 5. Integration, Testing &amp; Validation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧪 5. Integration, Testing &amp; Validation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#integration-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔌 Integration Types:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Test Levels:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-communication-middleware-stacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 6. Communication Middleware &amp; Stacks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔄 6. Communication Middleware &amp; Stacks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#middleware-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      📡 Middleware Setup:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-code-deployment-flashing" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧵 7. Code Deployment &amp; Flashing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-boot-time-initialization-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ 8. Boot-Time Initialization &amp; Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-run-time-vehicle-operation-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔁 9. Run-Time Vehicle Operation Flow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔁 9. Run-Time Vehicle Operation Flow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-user-flips-headlight-switch-input-captured-by-hmi-ecu" class="md-nav__link">
+    <span class="md-ellipsis">
+      1️⃣ User flips headlight switch → input captured by HMI ECU
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-hmi-ecu-sends-signal-over-can" class="md-nav__link">
+    <span class="md-ellipsis">
+      2️⃣ HMI ECU sends signal over CAN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-bcm-body-control-module-receives-and-processes-the-signal" class="md-nav__link">
+    <span class="md-ellipsis">
+      3️⃣ BCM (Body Control Module) receives and processes the signal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-bcm-runs-logic-from-swc-output-signal-triggers-gpio" class="md-nav__link">
+    <span class="md-ellipsis">
+      4️⃣ BCM runs logic (from SWC) → output signal triggers GPIO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-gpio-signal-controls-a-relayactuator-connected-to-headlights" class="md-nav__link">
+    <span class="md-ellipsis">
+      5️⃣ GPIO signal controls a relay/actuator connected to headlights
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-headlights-turn-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      6️⃣ Headlights turn ON
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-bcm-sends-confirmation-back-over-can-feedback-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      7️⃣ BCM sends confirmation back over CAN (feedback loop)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-info-displayed-in-instrument-cluster-ic-ecu" class="md-nav__link">
+    <span class="md-ellipsis">
+      8️⃣ Info displayed in instrument cluster (IC ECU)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-actuation-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚡ 10. Actuation &amp; Feedback
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚡ 10. Actuation &amp; Feedback">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#actuators" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌟 Actuators:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feedback-sensors" class="md-nav__link">
+    <span class="md-ellipsis">
+      📈 Feedback Sensors:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-vehicle-cloudconnectivity-microservices-ota" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌐 11. Vehicle Cloud/Connectivity (Microservices + OTA)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-safety-security-compliance" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛡️ 12. Safety, Security &amp; Compliance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wrap-up-summary-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔚 Wrap-Up Summary Table
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Overview</h1>
+
+<p>Let’s break this down like a <strong>real automotive engineering lifecycle + functional runtime flow</strong>, covering <strong>what happens, when, how, and where</strong> in a detailed and structured way. 🔍🚘</p>
+<hr />
+<p><a class="back-sidebar-btn" href="javascript:history.back()">⬅️ Back</a></p>
+<h2 id="end-to-end-vehicle-development-operational-workflow">🚗 END-TO-END VEHICLE DEVELOPMENT &amp; OPERATIONAL WORKFLOW</h2>
+<hr />
+<h3 id="1-requirement-gathering-what-why">🧩 1. <strong>Requirement Gathering (What &amp; Why)</strong></h3>
+<h4 id="goal">📌 Goal:</h4>
+<p>Capture what the vehicle should <em>do</em> from a feature/function perspective.</p>
+<h4 id="sources-of-requirements">🧠 Sources of Requirements:</h4>
+<ul>
+<li>Customer needs</li>
+<li>Regulatory compliance (e.g., ISO 26262 for safety)</li>
+<li>Market trends (ADAS, EV, connectivity)</li>
+<li>OEM strategy</li>
+</ul>
+<h4 id="types">🛠 Types:</h4>
+<ul>
+<li><strong>System Requirements</strong>: e.g., “Vehicle shall have Lane Keep Assist”</li>
+<li><strong>Software Requirements</strong>: e.g., “If deviation &gt; 0.5m, trigger correction signal”</li>
+<li><strong>Hardware Requirements</strong>: e.g., “ECU must have at least 2 CAN transceivers”</li>
+</ul>
+<hr />
+<h3 id="2-system-architecture-design-when-where">🧠 2. <strong>System Architecture Design (When &amp; Where)</strong></h3>
+<h4 id="goal_1">📌 Goal:</h4>
+<p>Translate requirements into system-level functional blocks and architecture.</p>
+<h4 id="involves">👷‍♀️ Involves:</h4>
+<ul>
+<li><strong>Functional Decomposition</strong> into vehicle domains (e.g., powertrain, body, ADAS)</li>
+<li><strong>Allocation of features to ECUs</strong></li>
+<li><strong>Signal mapping</strong> across sensors, ECUs, actuators</li>
+<li><strong>Selection of communication protocols</strong> (CAN, LIN, FlexRay, Ethernet)</li>
+</ul>
+<p>📌 <em>Tool Examples</em>: MagicDraw, Enterprise Architect, SystemDesk</p>
+<hr />
+<h3 id="3-software-ecu-architecture-design">⚙️ 3. <strong>Software &amp; ECU Architecture Design</strong></h3>
+<h4 id="goal_2">📌 Goal:</h4>
+<p>Design ECU-level and software-layer implementations.</p>
+<h4 id="steps">🔧 Steps:</h4>
+<ul>
+<li>Define <strong>ECU-level functional architecture</strong></li>
+<li>Use AUTOSAR architecture: Application, RTE, BSW</li>
+<li>Create <strong>software component (SWC)</strong> definitions</li>
+<li>Configure services (diagnostics, communication, OS)</li>
+</ul>
+<p>📌 <em>Tool Examples</em>: DaVinci Developer/Configurator, EB Tresos, Arctic Studio</p>
+<hr />
+<h3 id="4-model-based-development-simulinkstateflow">👩‍💻 4. <strong>Model-Based Development (Simulink/Stateflow)</strong></h3>
+<h4 id="goal_3">📌 Goal:</h4>
+<p>Implement and simulate feature logic before generating code.</p>
+<h4 id="tasks">🧱 Tasks:</h4>
+<ul>
+<li>Create <strong>Simulink/Stateflow</strong> models per SWC</li>
+<li><strong>Run MIL (Model-in-the-loop)</strong> simulations</li>
+<li>Perform <strong>unit testing</strong> &amp; verification (e.g., using GTest, SIL, PIL)</li>
+<li>Ensure <strong>code generation</strong> is compliant (e.g., MISRA C)</li>
+</ul>
+<p>📌 <em>Tools</em>: Simulink, Embedded Coder, TargetLink, Polyspace, SCADE</p>
+<hr />
+<h3 id="5-integration-testing-validation">🧪 5. <strong>Integration, Testing &amp; Validation</strong></h3>
+<h4 id="integration-types">🔌 Integration Types:</h4>
+<ul>
+<li><strong>Component Integration</strong>: Combine multiple SWCs</li>
+<li><strong>ECU Integration</strong>: Software + OS + BSW</li>
+<li><strong>System Integration</strong>: All ECUs in bench or vehicle</li>
+</ul>
+<h4 id="test-levels">🧪 Test Levels:</h4>
+<ul>
+<li>MIL → SIL → PIL → HIL → Vehicle</li>
+<li><strong>Diagnostics Testing</strong>, <strong>Fault Injection</strong>, <strong>Black Box Testing</strong></li>
+</ul>
+<p>📌 <em>Tools</em>: CANoe, CANalyzer, VT Systems, dSPACE, GTest, JIRA, Jenkins</p>
+<hr />
+<h3 id="6-communication-middleware-stacks">🔄 6. <strong>Communication Middleware &amp; Stacks</strong></h3>
+<h4 id="middleware-setup">📡 Middleware Setup:</h4>
+<ul>
+<li>CAN/LIN/FlexRay/Ethernet stacks configured (via tools like Vector GENy)</li>
+<li>Set up <strong>PDUs, signals, DBCs, AUTOSAR COM</strong></li>
+<li><strong>RTE</strong> maps software ports to actual ECU interfaces</li>
+</ul>
+<hr />
+<h3 id="7-code-deployment-flashing">🧵 7. <strong>Code Deployment &amp; Flashing</strong></h3>
+<ul>
+<li>Flash compiled HEX/SREC/BIN files onto ECU</li>
+<li>Validate flashing using checksum tools, bootloaders</li>
+<li>Run diagnostics to confirm correct image</li>
+</ul>
+<p>📌 <em>Tools</em>: UDE, Vector Flash Tool, OEM-specific bootloaders</p>
+<hr />
+<h3 id="8-boot-time-initialization-configuration">⚙️ 8. <strong>Boot-Time Initialization &amp; Configuration</strong></h3>
+<p>When the vehicle starts:
+- ECUs boot (RTOS or Linux)
+- Initialize drivers, memory, communication stacks
+- Establish handshake protocols (e.g., UDS session control)</p>
+<hr />
+<h3 id="9-run-time-vehicle-operation-flow">🔁 9. <strong>Run-Time Vehicle Operation Flow</strong></h3>
+<p>Let’s walk through an example: <strong>“Turn on Headlight via Switch”</strong><br />
+<em>(Apply this structure to any feature like braking, steering assist, infotainment)</em>:</p>
+<h4 id="1-user-flips-headlight-switch-input-captured-by-hmi-ecu">1️⃣ User flips headlight switch → input captured by HMI ECU</h4>
+<h4 id="2-hmi-ecu-sends-signal-over-can">2️⃣ HMI ECU sends signal over CAN</h4>
+<h4 id="3-bcm-body-control-module-receives-and-processes-the-signal">3️⃣ BCM (Body Control Module) receives and processes the signal</h4>
+<h4 id="4-bcm-runs-logic-from-swc-output-signal-triggers-gpio">4️⃣ BCM runs logic (from SWC) → output signal triggers GPIO</h4>
+<h4 id="5-gpio-signal-controls-a-relayactuator-connected-to-headlights">5️⃣ GPIO signal controls a <strong>relay/actuator</strong> connected to headlights</h4>
+<h4 id="6-headlights-turn-on">6️⃣ Headlights turn ON</h4>
+<h4 id="7-bcm-sends-confirmation-back-over-can-feedback-loop">7️⃣ BCM sends confirmation back over CAN (feedback loop)</h4>
+<h4 id="8-info-displayed-in-instrument-cluster-ic-ecu">8️⃣ Info displayed in instrument cluster (IC ECU)</h4>
+<hr />
+<h3 id="10-actuation-feedback">⚡ 10. <strong>Actuation &amp; Feedback</strong></h3>
+<h4 id="actuators">🌟 Actuators:</h4>
+<ul>
+<li>Electrical: Lights, wipers, mirrors</li>
+<li>Mechanical: Brake booster, EPS (electric power steering)</li>
+<li>Hydraulic: Transmission systems</li>
+</ul>
+<h4 id="feedback-sensors">📈 Feedback Sensors:</h4>
+<ul>
+<li>Position sensors, pressure sensors, radar/lidar, IMU</li>
+<li>Used for closed-loop control (PID, Stateflow logic)</li>
+</ul>
+<hr />
+<h3 id="11-vehicle-cloudconnectivity-microservices-ota">🌐 11. <strong>Vehicle Cloud/Connectivity (Microservices + OTA)</strong></h3>
+<p>For advanced ECUs:
+- Adaptive AUTOSAR runs Linux/QNX
+- Features as microservices (FOTA, analytics, V2X)
+- ECUs communicate with cloud via Telematics Unit</p>
+<hr />
+<h3 id="12-safety-security-compliance">🛡️ 12. <strong>Safety, Security &amp; Compliance</strong></h3>
+<ul>
+<li>Safety: ISO 26262 → ASIL A-D ratings</li>
+<li>Security: Secure boot, OTA encryption, firewalls</li>
+<li>Compliance: ASPICE, AUTOSAR, ISO 21434 (cybersecurity)</li>
+</ul>
+<hr />
+<h3 id="wrap-up-summary-table">🔚 Wrap-Up Summary Table</h3>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>What Happens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Requirements</td>
+<td>Define system, software, hardware needs</td>
+</tr>
+<tr>
+<td>System Design</td>
+<td>Architecture, domain mapping, signal routing</td>
+</tr>
+<tr>
+<td>ECU/SWC Design</td>
+<td>Allocate features, build SWCs, define services</td>
+</tr>
+<tr>
+<td>Modeling &amp; Dev</td>
+<td>Simulink, Stateflow, MBD, code gen</td>
+</tr>
+<tr>
+<td>Integration &amp; Testing</td>
+<td>Unit, HIL, System, Vehicle testing</td>
+</tr>
+<tr>
+<td>Communication Middleware</td>
+<td>Set up CAN/LIN/Ethernet, RTE, COM mappings</td>
+</tr>
+<tr>
+<td>Flashing &amp; Validation</td>
+<td>Flash code to ECU, diagnostics, error handling</td>
+</tr>
+<tr>
+<td>Runtime Operations</td>
+<td>ECUs boot, receive inputs, run logic, actuate outputs</td>
+</tr>
+<tr>
+<td>Feedback &amp; Control Loops</td>
+<td>Sensors monitor system, provide runtime adjustments</td>
+</tr>
+<tr>
+<td>Cloud + OTA (Adaptive)</td>
+<td>Microservices, data analytics, OTA updates, diagnostics</td>
+</tr>
+</tbody>
+</table>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.top", "navigation.tabs"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></script>
+      
+    
+  </body>
+</html>

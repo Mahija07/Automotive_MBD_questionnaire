@@ -16,7 +16,7 @@
     
     
       
-        <title>Coming soon - 🚗 AutoDev Vault by Mahija</title>
+        <title>Vehicle architecture - 🚗 AutoDev Vault by Mahija</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#embedded-systems-firmware" class="md-skip">
+        <a href="#vehicle-architecture-overview" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Coming soon
+              Vehicle architecture
             
           </span>
         </div>
@@ -268,56 +268,104 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#embedded-systems-firmware" class="md-nav__link">
+  <a href="#vehicle-architecture-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      🔧 Embedded Systems &amp; Firmware
+      🚗 Vehicle Architecture – Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚗 Vehicle Architecture – Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-vehicle-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      📘 What is Vehicle Architecture?
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#communication-networking" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#why-is-it-important" class="md-nav__link">
     <span class="md-ellipsis">
-      📡 Communication &amp; Networking
+      🧠 Why is it important?
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#hardware-design" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#key-elements-of-vehicle-architecture" class="md-nav__link">
     <span class="md-ellipsis">
-      🛠️ Hardware &amp; Design
+      🧩 Key Elements of Vehicle Architecture
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧩 Key Elements of Vehicle Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-ecus-electronic-control-units" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. ECUs (Electronic Control Units)
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#software-tools-programming" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#2-communication-protocols" class="md-nav__link">
     <span class="md-ellipsis">
-      🎛️ Software, Tools &amp; Programming
+      2. Communication Protocols
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#automotive-domains" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#3-gateway-ecus" class="md-nav__link">
     <span class="md-ellipsis">
-      🚘 Automotive Domains
+      3. Gateway ECUs
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#testing-validation" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#4-ecu-extracts" class="md-nav__link">
     <span class="md-ellipsis">
-      🧪 Testing &amp; Validation
+      4. ECU Extracts
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-domains" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Domains
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#benefits-of-understanding-vehicle-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Benefits of Understanding Vehicle Architecture
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -337,132 +385,65 @@
 
 
 
-  <h1>Coming soon</h1>
+  <h1>Vehicle architecture</h1>
 
-<style>
-.coming-soon-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 80px 20px;
-  text-align: center;
-  font-family: 'Segoe UI', sans-serif;
-  animation: fadeIn 2s ease-in;
-}
-
-.coming-soon-title {
-  font-size: 3rem;
-  color: #ff4081;
-  margin-bottom: 1rem;
-}
-
-.coming-soon-subtitle {
-  font-size: 1.3rem;
-  color: #666;
-  margin-bottom: 2rem;
-}
-
-.loader {
-  width: 80px;
-  height: 80px;
-  border: 8px solid #f3f3f3;
-  border-top: 8px solid #ff4081;
-  border-radius: 50%;
-  animation: spin 1.2s linear infinite;
-  margin-bottom: 1rem;
-}
-
-.upcoming-concepts {
-  text-align: left;
-  max-width: 500px;
-  margin-top: 40px;
-  font-size: 1.1rem;
-  color: #333;
-}
-
-.upcoming-concepts ul {
-  list-style-type: "📌 ";
-  padding-left: 20px;
-}
-
-@keyframes spin {
-  to { transform: rotate(360deg); }
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-</style>
-
-<div class="coming-soon-container">
-  <div class="loader"></div>
-  <div class="coming-soon-title">🚧 Coming Soon</div>
-  <div class="coming-soon-subtitle">
-    We're working on something amazing.<br>Check back again very soon!
-  </div>
-</div>
-
-<p>We are continuously working to expand the scope and depth of our content. Here's a sneak peek at some of the upcoming areas we’ll be diving into:</p>
+<h2 id="vehicle-architecture-overview">🚗 Vehicle Architecture – Overview</h2>
+<p><a class="back-sidebar-btn" href="javascript:history.back()">⬅️ Back</a></p>
+<h3 id="what-is-vehicle-architecture">📘 What is Vehicle Architecture?</h3>
+<p>Vehicle Architecture refers to the <strong>overall structural and functional layout</strong> of all electronic, mechanical, and software systems within a vehicle. It encompasses <strong>how different ECUs, sensors, actuators, networks, and software modules</strong> are organized and interact to deliver vehicle functionality.</p>
 <hr />
-<h3 id="embedded-systems-firmware">🔧 <strong>Embedded Systems &amp; Firmware</strong></h3>
+<h3 id="why-is-it-important">🧠 Why is it important?</h3>
+<p>Modern vehicles are <strong>complex systems on wheels</strong>, often containing 100+ ECUs, multiple network protocols (CAN, LIN, Ethernet), and integrated software systems. A robust architecture:
+- Ensures <strong>modularity, scalability, and reuse</strong>
+- Supports <strong>safe and reliable operation</strong>
+- Helps in meeting <strong>compliance</strong> (e.g., AUTOSAR, ISO 26262)
+- Enables features like <strong>ADAS, infotainment, EV control, connectivity</strong></p>
+<hr />
+<h3 id="key-elements-of-vehicle-architecture">🧩 Key Elements of Vehicle Architecture</h3>
+<h4 id="1-ecus-electronic-control-units">1. <strong>ECUs (Electronic Control Units)</strong></h4>
 <ul>
-<li><strong>Firmware</strong></li>
-<li><strong>RTOS</strong> (Real-Time Operating System) – listed twice</li>
-<li><strong>Kernel</strong></li>
-<li><strong>OpenWRT</strong> (Linux-based firmware)</li>
-<li><strong>TargetLink</strong> (Code generation from Simulink)</li>
-<li><strong>Automation</strong></li>
+<li>Act as the brains for specific vehicle domains (e.g., Powertrain, Body, ADAS)</li>
+<li>Each handles <strong>sensing, control, and actuation</strong></li>
+<li>Examples: BCM (Body Control Module), TCU (Transmission Control Unit), ECU (Engine Control Unit)</li>
 </ul>
-<hr />
-<h3 id="communication-networking">📡 <strong>Communication &amp; Networking</strong></h3>
+<h4 id="2-communication-protocols">2. <strong>Communication Protocols</strong></h4>
 <ul>
-<li><strong>CAN Bus</strong></li>
-<li><strong>TCP</strong></li>
-<li><strong>Networking</strong></li>
-<li><strong>WiFi</strong></li>
-<li><strong>Bluetooth</strong></li>
+<li>Ensure <strong>reliable data exchange</strong> between ECUs</li>
+<li>Examples:</li>
+<li><strong>CAN</strong> – Control Area Network (critical controls)</li>
+<li><strong>LIN</strong> – Local Interconnect Network (low-cost, slower)</li>
+<li><strong>Ethernet</strong> – High-speed (infotainment, ADAS)</li>
+<li><strong>FlexRay</strong>, <strong>MOST</strong>, <strong>UDS</strong></li>
 </ul>
-<hr />
-<h3 id="hardware-design">🛠️ <strong>Hardware &amp; Design</strong></h3>
+<h4 id="3-gateway-ecus">3. <strong>Gateway ECUs</strong></h4>
 <ul>
-<li><strong>PCB Design</strong></li>
-<li><strong>Hardware Side</strong></li>
+<li>Route and translate messages across <strong>different network domains</strong></li>
+<li>Handle <strong>security, diagnostics, and service-oriented communication</strong></li>
+</ul>
+<h4 id="4-ecu-extracts">4. <strong>ECU Extracts</strong></h4>
+<ul>
+<li>Subset of system-level data/config relevant to a specific ECU</li>
+<li>Used during <strong>development, integration, testing</strong></li>
+</ul>
+<h4 id="5-domains">5. <strong>Domains</strong></h4>
+<ul>
+<li>Vehicles are divided into domains like:</li>
 <li><strong>Powertrain</strong></li>
-<li><strong>Battery Management</strong></li>
+<li><strong>Chassis</strong></li>
+<li><strong>Body</strong></li>
+<li><strong>Infotainment</strong></li>
+<li><strong>ADAS</strong></li>
+<li><strong>Connectivity / Telematics</strong></li>
 </ul>
 <hr />
-<h3 id="software-tools-programming">🎛️ <strong>Software, Tools &amp; Programming</strong></h3>
+<h3 id="benefits-of-understanding-vehicle-architecture">🛠️ Benefits of Understanding Vehicle Architecture</h3>
 <ul>
-<li><strong>Python</strong></li>
-<li><strong>QT</strong> (GUI framework)</li>
+<li>Helps developers and engineers build <strong>modular and compliant systems</strong></li>
+<li>Allows efficient <strong>debugging, testing, and simulation</strong></li>
+<li>Supports <strong>traceability</strong> across software and system layers</li>
+<li>Essential for <strong>Model-Based Development, AUTOSAR, and Diagnostics</strong></li>
 </ul>
 <hr />
-<h3 id="automotive-domains">🚘 <strong>Automotive Domains</strong></h3>
-<ul>
-<li><strong>HMI / Infotainment</strong></li>
-<li><strong>Powertrain</strong> (also fits under Hardware)</li>
-<li><strong>Battery Management</strong></li>
-<li><strong>CAN Bus</strong> (relevant here too)</li>
-<li><strong>OEM</strong> – Original Equipment Manufacturer</li>
-<li><strong>Different layers of a vehicle and its manufacturing</strong><br />
-  (e.g., OEM, Tier-1, Tier-2 suppliers, ECUs, sensors, actuators, etc.)</li>
-<li><strong>ASPICE</strong> (Automotive SPICE – process framework)</li>
-<li><strong>Job role of Verification and Validation Engineer</strong></li>
-</ul>
-<hr />
-<h3 id="testing-validation">🧪 <strong>Testing &amp; Validation</strong></h3>
-<ul>
-<li><strong>Validation and Testing</strong></li>
-<li><strong>Job role of Verification and Validation Engineer</strong> (cross-listed)</li>
-<li><strong>Automation</strong> (can be part of test automation)</li>
-<li><strong>ASPICE</strong> (relevant here too)</li>
-</ul>
-<hr />
-<blockquote>
-<p>🔄 Stay tuned! We’re committed to delivering rich, technical content that breaks down complex automotive topics into understandable, practical knowledge.</p>
-</blockquote>
 
 
 
