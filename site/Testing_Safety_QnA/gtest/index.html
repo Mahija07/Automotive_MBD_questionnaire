@@ -315,6 +315,69 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#coverage-types-in-gtest" class="md-nav__link">
+    <span class="md-ellipsis">
+      Coverage Types in GTest:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-statement-coverage-line-coverage" class="md-nav__link">
+    <span class="md-ellipsis">
+      1️⃣ Statement Coverage (Line Coverage)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-branch-coverage-decision-coverage" class="md-nav__link">
+    <span class="md-ellipsis">
+      2️⃣ Branch Coverage (Decision Coverage)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-path-coverage" class="md-nav__link">
+    <span class="md-ellipsis">
+      3️⃣ Path Coverage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-condition-coverage" class="md-nav__link">
+    <span class="md-ellipsis">
+      4️⃣ Condition Coverage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-modified-conditiondecision-coverage-mcdc" class="md-nav__link">
+    <span class="md-ellipsis">
+      5️⃣ Modified Condition/Decision Coverage (MC/DC)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-achieve-gtest-coverage" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Achieve GTest Coverage:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#google-test-gtest-interview-questions-and-answers" class="md-nav__link">
     <span class="md-ellipsis">
       Google Test (GTest) Interview Questions and Answers
@@ -383,6 +446,175 @@ It lets developers write <strong>automated test cases</strong> to check the corr
 <li>✅ Cross-platform and highly customizable</li>
 <li>✅ Makes your software <strong>robust, testable, and production-ready</strong></li>
 </ul>
+<h3 id="coverage-types-in-gtest">Coverage Types in GTest:</h3>
+<ol>
+<li><strong>Statement Coverage (Line Coverage)</strong></li>
+<li><strong>Branch Coverage (Decision Coverage)</strong></li>
+<li><strong>Path Coverage</strong></li>
+<li><strong>Condition Coverage</strong></li>
+<li><strong>Modified Condition/Decision Coverage (MC/DC)</strong></li>
+</ol>
+<p>Each type of coverage ensures different aspects of the code are thoroughly tested.</p>
+<hr />
+<h3 id="1-statement-coverage-line-coverage">1️⃣ <strong>Statement Coverage (Line Coverage)</strong></h3>
+<p><strong>What It Means</strong>:<br />
+This coverage type ensures that <strong>every line of code</strong> in the program is executed at least once during the tests.</p>
+<p><strong>How to Achieve It</strong>:
+- Create tests that trigger every line of your function/method.
+- Each line of your function should be executed by at least one test case.</p>
+<p><strong>Example</strong>:</p>
+<pre><code class="language-cpp">bool checkEngineStatus(int engineTemperature, bool engineRunning) {
+    if (engineRunning) {
+        if (engineTemperature &gt; 90) {
+            return true;
+        }
+    }
+    return false;
+}
+</code></pre>
+<p>To cover this:</p>
+<ol>
+<li><strong>Test 1</strong>: <code>engineTemperature = 100, engineRunning = true</code> → hits line 3 and 4.</li>
+<li><strong>Test 2</strong>: <code>engineTemperature = 80, engineRunning = true</code> → hits line 3 but not line 4.</li>
+</ol>
+<p>By running tests that cover both the <code>if</code> conditions, you achieve <strong>Statement Coverage</strong>.</p>
+<p><strong>Tools</strong>:<br />
+- Use <strong>gcov</strong>, <strong>lcov</strong>, or <strong>Bullseye</strong> to measure line coverage.</p>
+<hr />
+<h3 id="2-branch-coverage-decision-coverage">2️⃣ <strong>Branch Coverage (Decision Coverage)</strong></h3>
+<p><strong>What It Means</strong>:<br />
+This type ensures that <strong>each decision point</strong> (i.e., <code>if</code> or <code>switch</code> statements) takes on <strong>both possible outcomes</strong>—true and false.</p>
+<p><strong>How to Achieve It</strong>:
+- Ensure that every <strong>decision point</strong> (condition inside an <code>if</code>, <code>while</code>, <code>switch</code>, etc.) evaluates to both <strong>true</strong> and <strong>false</strong>.</p>
+<p><strong>Example</strong>:</p>
+<pre><code class="language-cpp">bool isSpeedSafe(int speed) {
+    if (speed &gt; 120) {
+        return false;  // dangerous
+    } else {
+        return true;   // safe
+    }
+}
+</code></pre>
+<p>To cover <strong>branch coverage</strong>:
+- <strong>Test 1</strong>: <code>speed = 130</code> → goes through the <code>if</code> block, evaluates to <strong>false</strong>.
+- <strong>Test 2</strong>: <code>speed = 110</code> → goes through the <code>else</code> block, evaluates to <strong>true</strong>.</p>
+<p><strong>Tools</strong>:<br />
+- <strong>gcov</strong> or <strong>lcov</strong> will report branch coverage to show that both branches are tested.</p>
+<hr />
+<h3 id="3-path-coverage">3️⃣ <strong>Path Coverage</strong></h3>
+<p><strong>What It Means</strong>:<br />
+This type ensures that <strong>all possible paths</strong> through the code are exercised. This can become complex with multiple decision points (since it requires testing combinations of branches).</p>
+<p><strong>How to Achieve It</strong>:
+- Identify all possible <strong>paths</strong> through the code, including combinations of decision branches.
+- Create test cases to cover <strong>each unique combination of decisions</strong> (paths).</p>
+<p><strong>Example</strong>:</p>
+<pre><code class="language-cpp">bool shouldTurnOnLights(int timeOfDay, bool vehicleMoving) {
+    if (timeOfDay &gt; 18) {
+        if (vehicleMoving) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    return false;
+}
+</code></pre>
+<p>Paths:
+- Path 1: <code>timeOfDay &gt; 18</code> and <code>vehicleMoving = true</code>
+- Path 2: <code>timeOfDay &gt; 18</code> and <code>vehicleMoving = false</code>
+- Path 3: <code>timeOfDay &lt;= 18</code></p>
+<p>To cover <strong>path coverage</strong>:
+- <strong>Test 1</strong>: <code>timeOfDay = 19, vehicleMoving = true</code> → Path 1.
+- <strong>Test 2</strong>: <code>timeOfDay = 19, vehicleMoving = false</code> → Path 2.
+- <strong>Test 3</strong>: <code>timeOfDay = 15, vehicleMoving = false</code> → Path 3.</p>
+<p><strong>Tools</strong>:<br />
+- <strong>gcov</strong> or <strong>lcov</strong> will help track which paths are covered.</p>
+<hr />
+<h3 id="4-condition-coverage">4️⃣ <strong>Condition Coverage</strong></h3>
+<p><strong>What It Means</strong>:<br />
+This ensures that each <strong>atomic condition</strong> (in an <code>if</code> expression) is evaluated to both <strong>true and false</strong> at least once, regardless of the overall decision result.</p>
+<p><strong>How to Achieve It</strong>:
+- Ensure that each <strong>condition</strong> in a compound decision (<code>&amp;&amp;</code>, <code>||</code>) is tested for both <strong>true and false</strong>.</p>
+<p><strong>Example</strong>:</p>
+<pre><code class="language-cpp">bool isEmergencyStopNeeded(int speed, bool brakePressed) {
+    if (speed &gt; 120 &amp;&amp; brakePressed) {
+        return true;
+    }
+    return false;
+}
+</code></pre>
+<p><strong>Test Requirements</strong>:
+- Condition 1 (<code>speed &gt; 120</code>) → tested for both <strong>true</strong> and <strong>false</strong>
+- Condition 2 (<code>brakePressed</code>) → tested for both <strong>true</strong> and <strong>false</strong></p>
+<p><strong>Test Cases</strong>:
+- <strong>Test 1</strong>: <code>speed = 130, brakePressed = true</code> → tests condition 1 and 2 as <strong>true</strong>.
+- <strong>Test 2</strong>: <code>speed = 80, brakePressed = true</code> → tests condition 1 as <strong>false</strong>, condition 2 as <strong>true</strong>.
+- <strong>Test 3</strong>: <code>speed = 130, brakePressed = false</code> → tests condition 1 as <strong>true</strong>, condition 2 as <strong>false</strong>.</p>
+<p><strong>Tools</strong>:<br />
+- <strong>gcov</strong>, <strong>lcov</strong> will also track condition coverage.</p>
+<hr />
+<h3 id="5-modified-conditiondecision-coverage-mcdc">5️⃣ <strong>Modified Condition/Decision Coverage (MC/DC)</strong></h3>
+<p><strong>What It Means</strong>:<br />
+MC/DC is a stricter form of coverage than <strong>Condition</strong> and <strong>Branch Coverage</strong>. It ensures that:
+- Each condition <strong>evaluates to both true and false</strong>.
+- Each condition's <strong>independent effect</strong> on the overall decision is validated (i.e., altering one condition changes the outcome).</p>
+<p><strong>How to Achieve It</strong>:
+- Design tests to toggle one condition at a time while keeping others constant to show that each condition independently affects the decision.</p>
+<p><strong>Example</strong>:</p>
+<pre><code class="language-cpp">bool shouldDisableAutopilot(int speed, bool driverAlert) {
+    if (speed &gt; 120 &amp;&amp; driverAlert) {
+        return true;
+    }
+    return false;
+}
+</code></pre>
+<p>Here, we need to show that:
+- <code>speed &gt; 120</code> alone changes the result.
+- <code>driverAlert</code> alone changes the result.</p>
+<p><strong>Test Cases</strong>:
+- <strong>Test 1</strong>: <code>speed = 130, driverAlert = true</code> → both true → decision <strong>true</strong>
+- <strong>Test 2</strong>: <code>speed = 130, driverAlert = false</code> → changes <strong>driverAlert</strong> → decision <strong>false</strong>
+- <strong>Test 3</strong>: <code>speed = 80, driverAlert = true</code> → changes <strong>speed</strong> → decision <strong>false</strong></p>
+<p><strong>Tools</strong>:<br />
+- <strong>gcov</strong> and <strong>lcov</strong> can help generate MC/DC reports when testing individual conditions.</p>
+<hr />
+<h3 id="how-to-achieve-gtest-coverage">How to Achieve GTest Coverage:</h3>
+<p>To use <strong>Google Test</strong> effectively for these types of coverage, you can integrate <strong>code coverage tools</strong> into your build system:</p>
+<ol>
+<li><strong>Install Coverage Tools</strong>:</li>
+<li><strong>gcov</strong> (GNU tool for coverage analysis)</li>
+<li><strong>lcov</strong> (GUI frontend for gcov)</li>
+<li>
+<p><strong>Bullseye</strong>, <strong>VectorCAST</strong>, or similar tools</p>
+</li>
+<li>
+<p><strong>Compile with Coverage Flags</strong>:</p>
+</li>
+<li>
+<p>When building the test binary, use the following GCC flags to enable coverage:
+     <code>bash
+     g++ -fprofile-arcs -ftest-coverage -o my_test_binary my_test.cpp</code></p>
+</li>
+<li>
+<p><strong>Run Tests</strong>:</p>
+</li>
+<li>
+<p>Execute your GTest tests as usual. The coverage tools will record which parts of the code are exercised.</p>
+</li>
+<li>
+<p><strong>Generate Coverage Reports</strong>:</p>
+</li>
+<li>
+<p>Use <strong>lcov</strong> or <strong>gcov</strong> to generate coverage reports:
+     <code>bash
+     lcov --capture --directory . --output-file coverage.info
+     genhtml coverage.info --output-directory out</code></p>
+</li>
+<li>
+<p><strong>Visualize</strong>:</p>
+</li>
+<li>View the HTML reports that show line coverage, branch coverage, and other metrics.</li>
+</ol>
 <hr />
 <h3 id="google-test-gtest-interview-questions-and-answers"><strong>Google Test (GTest) Interview Questions and Answers</strong></h3>
 <hr />
