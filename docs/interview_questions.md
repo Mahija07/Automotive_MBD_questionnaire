@@ -79,7 +79,7 @@ Here you’ll find my detailed interview experiences, categorized by company:
 - [MERCEDEZ BENZ](benz.md)
 - [BMW](bmw.md)
 - [KIRLOSKAR](kirloskar.md)
-- [MARUTI SUZUKI](maruti_suzuki.md)
+- [MARUTI SUZUKI](marutisuzuki.md)
 - [NISSAN](nissan.md)
 - [Generic Tips](generic_tips.md) – Common trends, do’s & don’ts
 
